@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
 
   spec.source = {:git => 'https://github.com/konstantinpavlikhin/KSPAutomaticHeightCalculationTableCellView.git', :tag => "#{spec.version}"}
 
-  spec.summary = 'A useful superclass for a custom view-based NSTableView's cell.'
+  spec.summary = 'A useful superclass for a custom view-based NSTableViews cell.'
 
   spec.platform = :osx, "10.7"
 
