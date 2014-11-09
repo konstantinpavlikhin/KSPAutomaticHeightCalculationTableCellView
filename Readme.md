@@ -42,7 +42,7 @@ It is generally a good idea to put your cell into a separate XIB, but `KSPAutoma
 This step is also mandatory. `KSPAutomaticHeightCalculationTableCellView` only functions in Auto Layout-enabled mode. There is no point of using the class if you perform manual frame computations.
 
 **Attention, this is really important**:  
-After you add layout constraints, the height of your cell __should be unambiguous__! This means, height have to be constraint either directly (which will render KSPAutomaticHeightCalculationTableCellView usage pretty pointless) or in a derived-fashion (in which height of a cell somehow depends on a geometry of its subviews).
+After you add layout constraints, the height of your cell __should be unambiguous__! This means, height have to be constraint either directly (via explicit height constraint, which will render `KSPAutomaticHeightCalculationTableCellView` usage pretty pointless, since you already know the height value) or in a derived-fashion (in which height of a cell somehow depends on a geometry of its subviews, and the geometry, in its turn, depends of content).
 
 Remember it, cause if you leave your cell view's height ambigous you will end up with a table view rows having a zero height.
 
