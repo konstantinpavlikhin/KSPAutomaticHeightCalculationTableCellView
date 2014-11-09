@@ -12,6 +12,13 @@
 
 @implementation KSPAutomaticHeightCalculationTableCellView
 
+#pragma mark - NSView Overrides
+
++ (BOOL) requiresConstraintBasedLayout
+{
+  return YES;
+}
+
 #pragma mark - Prototype Cell View
 
 + (NSTableCellView*) prototype
