@@ -1,4 +1,4 @@
-# KSPAutomaticHeightCalculationTableCellView
+## KSPAutomaticHeightCalculationTableCellView
 
 A useful superclass for a custom view-based `NSTableView`’s cell.
 
