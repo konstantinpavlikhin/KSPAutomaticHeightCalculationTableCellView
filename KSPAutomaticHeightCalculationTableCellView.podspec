@@ -16,9 +16,9 @@ Pod::Spec.new do |spec|
 
   spec.summary = 'A useful superclass for a custom view-based NSTableViews cell.'
 
-  spec.platform = :osx, "10.7"
+  spec.platform = :osx, "10.8"
 
-  spec.osx.deployment_target = "10.7"
+  spec.osx.deployment_target = "10.8"
 
   spec.requires_arc = true
 
