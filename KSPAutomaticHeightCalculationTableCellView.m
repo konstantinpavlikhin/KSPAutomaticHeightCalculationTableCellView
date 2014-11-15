@@ -62,6 +62,11 @@
 
 #pragma mark -
 
++ (NSString*) correspondingNibName
+{
+  return NSStringFromClass([self class]);
+}
+
 + (BOOL) hasFixedHeight
 {
   return NO;
@@ -80,7 +85,7 @@
     // Instantiate a prototype cell.
     NSArray* topLevelObjects = nil;
     
-    BOOL result = [[[NSNib alloc] initWithNibNamed: [self className] bundle: nil] instantiateWithOwner: nil topLevelObjects: &topLevelObjects];
+    BOOL result = [[[NSNib alloc] initWithNibNamed: [self correspondingNibName] bundle: nil] instantiateWithOwner: nil topLevelObjects: &topLevelObjects];
     
     NSAssert(result, @"Unable to instantiate nib file.");
     
