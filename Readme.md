@@ -16,6 +16,30 @@ This is how it used to look in Objective-C:
 @end
 ```
 
+#### Put your cell into a separate XIB and let the `KSPAutomaticHeightCalculationTableCellView` know how to find it at runtime
+
+It is generally a good idea to put your cell into a separate XIB, but usage of a `KSPAutomaticHeightCalculationTableCellView` makes this mandatory.
+
+By default `KSPAutomaticHeightCalculationTableCellView` will look for a nib file named exactly like your cell's subclass in a main bundle.
+
+That is, if you call your cell class `MyLovelyCell` you have to name your XIB `MyLovelyCell.xib`. This xib should contain one and only one root view of MyLovelyCell class. You still can have an arbitrary number of other objects in a XIB, though.
+
+You can customize the behaviour by overriding the following class methods:
+
+```objective-c
++ (NSString*) correspondingNibName
+{
+  return @"SomethingDifferent";
+}
+```
+
+```objective-c
++ (NSBundle*) correspondingBundle
+{
+  return [NSBundle bundle...];
+}
+```
+
 #### Decide whether your custom table cell should have a variable height
 
 **Cell has a variable height** == **Cell's height depends on a represented object value** `OR` **cell's height depends on cell's width**.
@@ -32,10 +56,6 @@ Override `+hasFixedHeight` and return `YES` if your cell's height is really fixe
 ```
 
 In this case `KSPAutomaticHeightCalculationTableCellView` will cache the height after it will be calculated for the first time. Subsequent calls to `+heightWithRepresentedObject:width:` will return the stored value.
-
-#### Your cell should have its own XIB and it should be named exactly like your class
-
-It is generally a good idea to put your cell into a separate XIB, but usage of a `KSPAutomaticHeightCalculationTableCellView` makes this mandatory. If you call your cell class `MyLovelyCell` you have to name your XIB `MyLovelyCell.xib`. This XIB should contain one and only one root view of MyLovelyCell class. You still can have an arbitrary number of other objects in a XIB, though.
 
 #### Layout your cell via Auto Layout
 
