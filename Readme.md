@@ -81,4 +81,19 @@ Remember it, cause if you leave your cell view's height ambigous you will end up
 
 At this point `KSPAutomaticHeightCalculationTableCellView` will create a prototype cell instance, set its `objectValue` property to the passed value, constrain its width to the `columnWidth` and calculate the minimum required height.
 
+#### Make sure you don't make unnecessary work in your table cell view prototype
+
+When `KSPAutomaticHeightCalculationTableCellView` instantiates a cell for measurement purposes it sets its boolean `prototype` property to `YES`. If you happen to do some heavy-lifting in your table cell view subclass, for example, doing expensive calculations in response to an `objectValue` change, please refrain from doing so if the calculation result doesn't affect the layout.
+
+```objective-c
+if(!self.prototype)
+{
+  // Do some fancy visual effects pre-calculation (image caching, data detection and so on...).
+}
+else
+{
+  // This cell is a prototype that is being reused for a row height calculation (possibly hundreds times per second).
+}
+```
+
 That's it!
