@@ -97,7 +97,7 @@
     [self setPrototype: [[topLevelObjects filteredArrayUsingPredicate: [NSPredicate predicateWithFormat: @"self isKindOfClass: %@", self]] firstObject]];
     
     // Keep the constraint for performance considerations and vary its 'constant' property.
-    [self setWidthConstraint: [NSLayoutConstraint constraintWithItem: [self prototype] attribute: NSLayoutAttributeWidth relatedBy: NSLayoutRelationEqual toItem: nil attribute: NSLayoutAttributeNotAnAttribute multiplier: 1.0 constant: 0.0]];
+    [self setWidthConstraint: [NSLayoutConstraint constraintWithItem: [self prototype] attribute: NSLayoutAttributeWidth relatedBy: NSLayoutRelationEqual toItem: nil attribute: NSLayoutAttributeNotAnAttribute multiplier: 1 constant: 0]];
     
     [[self prototype] addConstraint: [self widthConstraint]];
   }
