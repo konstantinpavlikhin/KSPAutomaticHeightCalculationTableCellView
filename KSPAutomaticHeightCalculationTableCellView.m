@@ -21,14 +21,14 @@
 
 #pragma mark - Prototype Cell View
 
-+ (NSTableCellView*) prototype
++ (NSTableCellView*) prototypeCell
 {
-  return objc_getAssociatedObject(self, @selector(prototype));
+  return objc_getAssociatedObject(self, @selector(prototypeCell));
 }
 
-+ (void) setPrototype: (NSTableCellView*) prototype
++ (void) setPrototypeCell: (NSTableCellView*) prototypeCell
 {
-  objc_setAssociatedObject(self, @selector(prototype), prototype, OBJC_ASSOCIATION_RETAIN);
+  objc_setAssociatedObject(self, @selector(prototypeCell), prototypeCell, OBJC_ASSOCIATION_RETAIN);
 }
 
 #pragma mark - Width Constraint
@@ -83,9 +83,9 @@
   if([self hasFixedHeight] && [self hasCachedHeight]) return [self cachedHeight].doubleValue;
   
   // Give a prototype cell a chance to reset any applied customizations.
-  [[self prototype] prepareForReuse];
+  [[self prototypeCell] prepareForReuse];
   
-  if(![self prototype])
+  if(![self prototypeCell])
   {
     // Instantiate a prototype cell.
     NSArray* topLevelObjects = nil;
@@ -94,33 +94,33 @@
     
     NSAssert(result, @"Unable to instantiate nib file.");
     
-    [self setPrototype: [[topLevelObjects filteredArrayUsingPredicate: [NSPredicate predicateWithFormat: @"self isKindOfClass: %@", self]] firstObject]];
+    [self setPrototypeCell: [[topLevelObjects filteredArrayUsingPredicate: [NSPredicate predicateWithFormat: @"self isKindOfClass: %@", self]] firstObject]];
     
     // Keep the constraint for performance considerations and vary its 'constant' property.
-    [self setWidthConstraint: [NSLayoutConstraint constraintWithItem: [self prototype] attribute: NSLayoutAttributeWidth relatedBy: NSLayoutRelationEqual toItem: nil attribute: NSLayoutAttributeNotAnAttribute multiplier: 1 constant: 0]];
+    [self setWidthConstraint: [NSLayoutConstraint constraintWithItem: [self prototypeCell] attribute: NSLayoutAttributeWidth relatedBy: NSLayoutRelationEqual toItem: nil attribute: NSLayoutAttributeNotAnAttribute multiplier: 1 constant: 0]];
     
-    [[self prototype] addConstraint: [self widthConstraint]];
+    [[self prototypeCell] addConstraint: [self widthConstraint]];
   }
   
   [self widthConstraint].constant = width;
   
   // Fill the cell with information.
-  [self prototype].objectValue = object;
+  [self prototypeCell].objectValue = object;
   
   // Let the passed block configure the cell.
-  if(blockOrNil) blockOrNil([self prototype]);
+  if(blockOrNil) blockOrNil([self prototypeCell]);
   
   // Ensure that layout is up to date.
-  [[self prototype] layoutSubtreeIfNeeded];
+  [[self prototypeCell] layoutSubtreeIfNeeded];
   
   // Calculate and store the minimum possible height.
-  [self setCachedheight: @([[self prototype] fittingSize].height)];
+  [self setCachedheight: @([[self prototypeCell] fittingSize].height)];
   
   // For a fixed-height cells these objects are no longer needed.
   if([self hasFixedHeight])
   {
     // Release the prototype cell.
-    [self setPrototype: nil];
+    [self setPrototypeCell: nil];
     
     // Release the width constraint.
     [self setWidthConstraint: nil];
