@@ -95,7 +95,10 @@
     NSAssert(result, @"Unable to instantiate nib file.");
     
     [self setPrototypeCell: [[topLevelObjects filteredArrayUsingPredicate: [NSPredicate predicateWithFormat: @"self isKindOfClass: %@", self]] firstObject]];
-    
+
+    // Let the cell instance know that it will be used as a prototype.
+    [self prototypeCell].prototype = YES;
+
     // Keep the constraint for performance considerations and vary its 'constant' property.
     [self setWidthConstraint: [NSLayoutConstraint constraintWithItem: [self prototypeCell] attribute: NSLayoutAttributeWidth relatedBy: NSLayoutRelationEqual toItem: nil attribute: NSLayoutAttributeNotAnAttribute multiplier: 1 constant: 0]];
     
