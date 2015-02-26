@@ -21,12 +21,12 @@
 
 #pragma mark - Prototype Cell View
 
-+ (NSTableCellView*) prototypeCell
++ (KSPAutomaticHeightCalculationTableCellView*) prototypeCell
 {
   return objc_getAssociatedObject(self, @selector(prototypeCell));
 }
 
-+ (void) setPrototypeCell: (NSTableCellView*) prototypeCell
++ (void) setPrototypeCell: (KSPAutomaticHeightCalculationTableCellView*) prototypeCell
 {
   objc_setAssociatedObject(self, @selector(prototypeCell), prototypeCell, OBJC_ASSOCIATION_RETAIN);
 }
