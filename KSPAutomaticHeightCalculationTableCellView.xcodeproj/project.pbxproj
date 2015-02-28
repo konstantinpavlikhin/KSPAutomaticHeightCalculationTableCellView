@@ -1,0 +1,97 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KSPAutomaticHeightCalculationTableCellView.h; sourceTree = "<group>"; };
+		B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSPAutomaticHeightCalculationTableCellView.m; sourceTree = "<group>"; };
+		B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KSPAutomaticHeightCalculationTableCellView.podspec; sourceTree = "<group>"; };
+		B5B6330C1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KSPAutomaticHeightCalculationTableCellView+Private.h"; sourceTree = "<group>"; };
+		B5B6330D1AA1DF9B00BBF084 /* License.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = License.md; sourceTree = "<group>"; };
+		B5B6330E1AA1DF9B00BBF084 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B5B633011AA1DF4200BBF084 = {
+			isa = PBXGroup;
+			children = (
+				B5B633081AA1DF6F00BBF084 /* KSPAutomaticHeightCalculationTableCellView */,
+				B5B6330F1AA1DFAD00BBF084 /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		B5B633081AA1DF6F00BBF084 /* KSPAutomaticHeightCalculationTableCellView */ = {
+			isa = PBXGroup;
+			children = (
+				B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */,
+				B5B6330C1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView+Private.h */,
+				B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */,
+			);
+			name = KSPAutomaticHeightCalculationTableCellView;
+			sourceTree = "<group>";
+		};
+		B5B6330F1AA1DFAD00BBF084 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */,
+				B5B6330E1AA1DF9B00BBF084 /* Readme.md */,
+				B5B6330D1AA1DF9B00BBF084 /* License.md */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		B5B633021AA1DF4200BBF084 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KSP;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Konstantin Pavlikhin";
+			};
+			buildConfigurationList = B5B633051AA1DF4200BBF084 /* Build configuration list for PBXProject "KSPAutomaticHeightCalculationTableCellView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			mainGroup = B5B633011AA1DF4200BBF084;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		B5B633061AA1DF4200BBF084 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		B5B633071AA1DF4200BBF084 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5B633051AA1DF4200BBF084 /* Build configuration list for PBXProject "KSPAutomaticHeightCalculationTableCellView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B633061AA1DF4200BBF084 /* Debug */,
+				B5B633071AA1DF4200BBF084 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5B633021AA1DF4200BBF084 /* Project object */;
+}
