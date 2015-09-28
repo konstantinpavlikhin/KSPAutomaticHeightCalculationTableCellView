@@ -11,8 +11,8 @@
 		B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KSPAutomaticHeightCalculationTableCellView.m; sourceTree = "<group>"; };
 		B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KSPAutomaticHeightCalculationTableCellView.podspec; sourceTree = "<group>"; };
 		B5B6330C1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KSPAutomaticHeightCalculationTableCellView+Private.h"; sourceTree = "<group>"; };
-		B5B6330D1AA1DF9B00BBF084 /* License.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = License.md; sourceTree = "<group>"; };
-		B5B6330E1AA1DF9B00BBF084 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		B5B6330D1AA1DF9B00BBF084 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		B5B6330E1AA1DF9B00BBF084 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -38,8 +38,8 @@
 			isa = PBXGroup;
 			children = (
 				B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */,
-				B5B6330E1AA1DF9B00BBF084 /* Readme.md */,
-				B5B6330D1AA1DF9B00BBF084 /* License.md */,
+				B5B6330E1AA1DF9B00BBF084 /* README.md */,
+				B5B6330D1AA1DF9B00BBF084 /* LICENSE.md */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -58,6 +58,9 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = B5B633011AA1DF4200BBF084;
 			projectDirPath = "";
 			projectRoot = "";

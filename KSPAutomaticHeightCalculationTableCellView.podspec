@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
 
   spec.social_media_url = 'https://twitter.com/kpavlikhin'
 
-  spec.license = {:type => 'MIT', :file => 'License.md'}
+  spec.license = {:type => 'MIT', :file => 'LICENSE.md'}
 
   spec.homepage = 'https://github.com/konstantinpavlikhin/KSPAutomaticHeightCalculationTableCellView'
 
