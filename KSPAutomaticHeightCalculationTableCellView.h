@@ -14,7 +14,7 @@
 
 // * * *.
 
-typedef void (^KSPTableCellViewConfigurationBlock)(KSPAutomaticHeightCalculationTableCellView*);
+typedef void (^KSPTableCellViewConfigurationBlock)(KSPAutomaticHeightCalculationTableCellView* _Nonnull);
 
 // * * *.
 
@@ -22,11 +22,11 @@ typedef void (^KSPTableCellViewConfigurationBlock)(KSPAutomaticHeightCalculation
 @interface KSPAutomaticHeightCalculationTableCellView : NSTableCellView
 
 /// Override to return a corresponding nib name. Default implementation simply returns the class name.
-+ (NSString*) correspondingNibName;
++ (nonnull NSString*) correspondingNibName;
 
 /// Given a content object, width of a presenting table column and a cell configuration block calculates the minimum possible height of a cell.
-+ (CGFloat) heightWithRepresentedObject: (id) object width: (CGFloat) width configurationBlock: (KSPTableCellViewConfigurationBlock) blockOrNil;
++ (CGFloat) heightWithRepresentedObject: (nullable id) object width: (CGFloat) width configurationBlock: (nullable KSPTableCellViewConfigurationBlock) blockOrNil;
 
-+ (CGFloat) heightWithRepresentedObject: (id) object width: (CGFloat) width;
++ (CGFloat) heightWithRepresentedObject: (nullable id) object width: (CGFloat) width;
 
 @end

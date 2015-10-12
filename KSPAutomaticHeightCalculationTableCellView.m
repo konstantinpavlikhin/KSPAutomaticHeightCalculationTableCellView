@@ -21,36 +21,36 @@
 
 #pragma mark - Prototype Cell View
 
-+ (KSPAutomaticHeightCalculationTableCellView*) prototypeCell
++ (nullable KSPAutomaticHeightCalculationTableCellView*) prototypeCell
 {
   return objc_getAssociatedObject(self, @selector(prototypeCell));
 }
 
-+ (void) setPrototypeCell: (KSPAutomaticHeightCalculationTableCellView*) prototypeCell
++ (void) setPrototypeCell: (nullable KSPAutomaticHeightCalculationTableCellView*) prototypeCell
 {
   objc_setAssociatedObject(self, @selector(prototypeCell), prototypeCell, OBJC_ASSOCIATION_RETAIN);
 }
 
 #pragma mark - Width Constraint
 
-+ (NSLayoutConstraint*) widthConstraint
++ (nullable NSLayoutConstraint*) widthConstraint
 {
   return objc_getAssociatedObject(self, @selector(widthConstraint));
 }
 
-+ (void) setWidthConstraint: (NSLayoutConstraint*) widthConstraint
++ (void) setWidthConstraint: (nullable NSLayoutConstraint*) widthConstraint
 {
   objc_setAssociatedObject(self, @selector(widthConstraint), widthConstraint, OBJC_ASSOCIATION_RETAIN);
 }
 
 #pragma mark - Cached Height
 
-+ (NSNumber*) cachedHeight
++ (nullable NSNumber*) cachedHeight
 {
   return objc_getAssociatedObject(self, @selector(cachedHeight));
 }
 
-+ (void) setCachedheight: (NSNumber*) cachedHeight
++ (void) setCachedheight: (nullable NSNumber*) cachedHeight
 {
   objc_setAssociatedObject(self, @selector(cachedHeight), cachedHeight, OBJC_ASSOCIATION_RETAIN);
 }
@@ -62,12 +62,12 @@
 
 #pragma mark -
 
-+ (NSString*) correspondingNibName
++ (nonnull NSString*) correspondingNibName
 {
   return NSStringFromClass([self class]);
 }
 
-+ (NSBundle*) correspondingBundle
++ (nonnull NSBundle*) correspondingBundle
 {
   return [NSBundle mainBundle];
 }
@@ -77,7 +77,7 @@
   return NO;
 }
 
-+ (CGFloat) heightWithRepresentedObject: (id) object width: (CGFloat) width configurationBlock: (KSPTableCellViewConfigurationBlock) blockOrNil
++ (CGFloat) heightWithRepresentedObject: (nullable id) object width: (CGFloat) width configurationBlock: (nullable KSPTableCellViewConfigurationBlock) blockOrNil
 {
   // If we have a fixed-height prototype and height has already been calculated — return the cached value.
   if([self hasFixedHeight] && [self hasCachedHeight]) return [self cachedHeight].doubleValue;
@@ -134,7 +134,7 @@
   return [self cachedHeight].doubleValue;
 }
 
-+ (CGFloat) heightWithRepresentedObject: (id) object width: (CGFloat) width
++ (CGFloat) heightWithRepresentedObject: (nullable id) object width: (CGFloat) width
 {
   return [self heightWithRepresentedObject: object width: width configurationBlock: nil];
 }
