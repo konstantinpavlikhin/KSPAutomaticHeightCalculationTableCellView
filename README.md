@@ -27,14 +27,14 @@ That is, if you call your cell class `MyLovelyCell` you have to name your XIB `M
 You can customize the behaviour by overriding the following class methods:
 
 ```objective-c
-+ (NSString*) correspondingNibName
++ (nonnull NSString*) correspondingNibName
 {
   return @"SomethingDifferent";
 }
 ```
 
 ```objective-c
-+ (NSBundle*) correspondingBundle
++ (nonnull NSBundle*) correspondingBundle
 {
   return [NSBundle bundle...];
 }
