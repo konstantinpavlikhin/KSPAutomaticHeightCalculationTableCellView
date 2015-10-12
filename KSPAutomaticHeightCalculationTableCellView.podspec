@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
 
   spec.name = 'KSPAutomaticHeightCalculationTableCellView'
 
-  spec.version = '1.2.0'
+  spec.version = '1.3.0'
 
   spec.authors = {'Konstantin Pavlikhin' => 'k.pavlikhin@gmail.com'}
 
