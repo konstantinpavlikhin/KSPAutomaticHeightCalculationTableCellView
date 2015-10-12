@@ -51,7 +51,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = KSP;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Konstantin Pavlikhin";
 			};
 			buildConfigurationList = B5B633051AA1DF4200BBF084 /* Build configuration list for PBXProject "KSPAutomaticHeightCalculationTableCellView" */;
@@ -73,6 +73,8 @@
 		B5B633061AA1DF4200BBF084 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
