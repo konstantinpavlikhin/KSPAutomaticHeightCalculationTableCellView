@@ -3,7 +3,7 @@
 //  KSPAutomaticHeightCalculationTableCellView
 //
 //  Created by Konstantin Pavlikhin on 13.10.14.
-//  Copyright (c) 2014 Konstantin Pavlikhin. All rights reserved.
+//  Copyright (c) 2015 Konstantin Pavlikhin. All rights reserved.
 //
 
 #import "KSPAutomaticHeightCalculationTableCellView+Private.h"
