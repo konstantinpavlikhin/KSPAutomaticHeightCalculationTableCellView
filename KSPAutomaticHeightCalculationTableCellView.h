@@ -8,9 +8,15 @@
 
 #import <Cocoa/Cocoa.h>
 
+// * * *.
+
 @class KSPAutomaticHeightCalculationTableCellView;
 
+// * * *.
+
 typedef void (^KSPTableCellViewConfigurationBlock)(KSPAutomaticHeightCalculationTableCellView*);
+
+// * * *.
 
 /// This class is responsible for instantiation and height measurement of a "dummy" table cell view.
 @interface KSPAutomaticHeightCalculationTableCellView : NSTableCellView
