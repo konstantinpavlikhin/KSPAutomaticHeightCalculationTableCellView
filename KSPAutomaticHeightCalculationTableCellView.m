@@ -93,7 +93,7 @@
     // Instantiate a prototype cell.
     NSArray* topLevelObjects = nil;
     
-    BOOL result = [[[NSNib alloc] initWithNibNamed: [self correspondingNibName] bundle: [self correspondingBundle]] instantiateWithOwner: nil topLevelObjects: &topLevelObjects];
+    __unused const BOOL result = [[[NSNib alloc] initWithNibNamed: [self correspondingNibName] bundle: [self correspondingBundle]] instantiateWithOwner: nil topLevelObjects: &topLevelObjects];
     
     NSAssert(result, @"Unable to instantiate nib file.");
     
