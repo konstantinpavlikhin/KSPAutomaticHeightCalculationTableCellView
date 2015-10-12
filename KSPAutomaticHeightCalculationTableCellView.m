@@ -80,7 +80,10 @@
 + (CGFloat) heightWithRepresentedObject: (nullable id) object width: (CGFloat) width configurationBlock: (nullable KSPTableCellViewConfigurationBlock) blockOrNil
 {
   // If we have a fixed-height prototype and height has already been calculated — return the cached value.
-  if([self hasFixedHeight] && [self hasCachedHeight]) return [self cachedHeight].doubleValue;
+  if([self hasFixedHeight] && [self hasCachedHeight])
+  {
+    return [self cachedHeight].doubleValue;
+  }
   
   // Give a prototype cell a chance to reset any applied customizations.
   [[self prototypeCell] prepareForReuse];
