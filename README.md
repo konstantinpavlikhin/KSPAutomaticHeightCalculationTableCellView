@@ -1,5 +1,9 @@
 ## KSPAutomaticHeightCalculationTableCellView
 
+[![Version](https://img.shields.io/cocoapods/v/KSPAutomaticHeightCalculationTableCellView.svg)](https://cocoapods.org/pods/KSPAutomaticHeightCalculationTableCellView)
+[![Platform](https://img.shields.io/cocoapods/p/KSPAutomaticHeightCalculationTableCellView.svg)](https://cocoapods.org/pods/KSPAutomaticHeightCalculationTableCellView)
+[![License](https://img.shields.io/cocoapods/l/KSPAutomaticHeightCalculationTableCellView.svg)](https://cocoapods.org/pods/KSPAutomaticHeightCalculationTableCellView)
+
 A useful superclass for a custom view-based `NSTableView`’s cell.
 
 ## How To Use
