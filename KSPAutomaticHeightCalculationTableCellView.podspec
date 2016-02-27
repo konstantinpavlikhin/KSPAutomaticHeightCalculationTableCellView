@@ -22,6 +22,6 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
 
-  spec.source_files = '*.{h,m}'
+  spec.source_files = 'Sources/*.{h,m}'
 
 end
