@@ -10,6 +10,8 @@
 
 #import "AHCUsersViewController.h"
 
+#import "AHCMessagesViewController.h"
+
 @interface AppDelegate ()
 
 @property(weak) IBOutlet NSWindow* window;
@@ -19,6 +21,8 @@
 @implementation AppDelegate
 {
   AHCUsersViewController* _usersViewController;
+
+  AHCMessagesViewController* _messagesViewController;
 }
 
 - (void) applicationDidFinishLaunching: (NSNotification*) aNotification
@@ -30,11 +34,25 @@
 
     [self.window.contentView addSubview: _usersViewController.view];
 
-    NSDictionary* const views = @{@"usersView": _usersViewController.view};
+    // * * *.
 
-    [self.window.contentView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[usersView]|" options: 0 metrics: nil views: views]];
+    _messagesViewController = [[AHCMessagesViewController alloc] initWithNibName: @"AHCMessagesView" bundle: nil];
+
+    _messagesViewController.view.translatesAutoresizingMaskIntoConstraints = NO;
+
+    [self.window.contentView addSubview: _messagesViewController.view];
+
+    // * * *.
+
+    NSDictionary* const views = @{@"usersView": _usersViewController.view,
+
+                                  @"messagesView": _messagesViewController.view};
+
+    [self.window.contentView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[usersView(>=200@1000)][messagesView(>=200@1000)]|" options: 0 metrics: nil views: views]];
 
     [self.window.contentView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[usersView]|" options: 0 metrics: nil views: views]];
+
+    [self.window.contentView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[messagesView]|" options: 0 metrics: nil views: views]];
   }}
 }
 
