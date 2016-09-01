@@ -16,6 +16,10 @@
 
 @property(weak) IBOutlet NSWindow* window;
 
+@property(readwrite, strong, nonatomic) IBOutlet NSView* leftPane;
+
+@property(readwrite, strong, nonatomic) IBOutlet NSView* rightPane;
+
 @end
 
 @implementation AppDelegate
@@ -32,27 +36,33 @@
 
     _usersViewController.view.translatesAutoresizingMaskIntoConstraints = NO;
 
-    [self.window.contentView addSubview: _usersViewController.view];
+    [self.leftPane addSubview: _usersViewController.view];
 
     // * * *.
 
+    NSDictionary* const views = @{@"usersView": _usersViewController.view};
+
+    [self.leftPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[usersView]|" options: 0 metrics: nil views: views]];
+
+    [self.leftPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[usersView]|" options: 0 metrics: nil views: views]];
+  }}
+
+  // * * *.
+
+  {{
     _messagesViewController = [[AHCMessagesViewController alloc] initWithNibName: @"AHCMessagesView" bundle: nil];
 
     _messagesViewController.view.translatesAutoresizingMaskIntoConstraints = NO;
 
-    [self.window.contentView addSubview: _messagesViewController.view];
+    [self.rightPane addSubview: _messagesViewController.view];
 
     // * * *.
 
-    NSDictionary* const views = @{@"usersView": _usersViewController.view,
+    NSDictionary* const views = @{@"messagesView": _messagesViewController.view};
 
-                                  @"messagesView": _messagesViewController.view};
+    [self.rightPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[messagesView]|" options: 0 metrics: nil views: views]];
 
-    [self.window.contentView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[usersView(>=200@1000)][messagesView(>=200@1000)]|" options: 0 metrics: nil views: views]];
-
-    [self.window.contentView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[usersView]|" options: 0 metrics: nil views: views]];
-
-    [self.window.contentView addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[messagesView]|" options: 0 metrics: nil views: views]];
+    [self.rightPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[messagesView]|" options: 0 metrics: nil views: views]];
   }}
 }
 
