@@ -10,4 +10,12 @@
 
 @interface AHCUserTableCellView ()
 
+@property(readwrite, strong, nonatomic) IBOutlet NSImageView* avatarView;
+
+@property(readwrite, strong, nonatomic) IBOutlet NSTextField* nameLabel;
+
+@property(readwrite, strong, nonatomic) IBOutlet NSLayoutConstraint* nameLabelBottomConstraint;
+
+@property(readwrite, strong, nonatomic) IBOutlet NSTextField* statusLabel;
+
 @end
