@@ -11,6 +11,8 @@
 		B57793DD1D7812CB00F92D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793D81D7812BA00F92D7E /* main.m */; };
 		B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57793DE1D7812EA00F92D7E /* Assets.xcassets */; };
 		B57793E21D7812F300F92D7E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793E01D7812F300F92D7E /* MainMenu.xib */; };
+		B57793E71D7814F200F92D7E /* AHCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793E61D7814F200F92D7E /* AHCViewController.m */; };
+		B57793EB1D78155500F92D7E /* AHCView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793EA1D78155500F92D7E /* AHCView.xib */; };
 		B5CD035E1BCBAC210072878A /* KSPAutomaticHeightCalculationTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */; };
 		B5CD035F1BCBB0B00072878A /* KSPAutomaticHeightCalculationTableCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5CD03601BCBB1430072878A /* KSPAutomaticHeightCalculationTableCellView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B6330C1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -24,6 +26,10 @@
 		B57793DE1D7812EA00F92D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sample/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		B57793E11D7812F300F92D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Sample/Resources/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B57793E31D78134900F92D7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sample/Resources/Info.plist; sourceTree = "<group>"; };
+		B57793E51D7814F200F92D7E /* AHCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCViewController.h; path = Sample/Sources/AHCViewController.h; sourceTree = "<group>"; };
+		B57793E61D7814F200F92D7E /* AHCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCViewController.m; path = Sample/Sources/AHCViewController.m; sourceTree = "<group>"; };
+		B57793E91D78152900F92D7E /* AHCViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCViewController+Private.h"; path = "Sample/Sources/AHCViewController+Private.h"; sourceTree = "<group>"; };
+		B57793EA1D78155500F92D7E /* AHCView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCView.xib; path = Sample/Resources/AHCView.xib; sourceTree = "<group>"; };
 		B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSPAutomaticHeightCalculationTableCellView.h; path = Sources/KSPAutomaticHeightCalculationTableCellView.h; sourceTree = "<group>"; };
 		B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSPAutomaticHeightCalculationTableCellView.m; path = Sources/KSPAutomaticHeightCalculationTableCellView.m; sourceTree = "<group>"; };
 		B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KSPAutomaticHeightCalculationTableCellView.podspec; sourceTree = "<group>"; };
@@ -61,6 +67,7 @@
 		B57793D51D78129500F92D7E /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				B57793E81D78150B00F92D7E /* ViewController */,
 				B57793D61D7812BA00F92D7E /* AppDelegate.h */,
 				B57793D71D7812BA00F92D7E /* AppDelegate.m */,
 				B57793D81D7812BA00F92D7E /* main.m */,
@@ -69,6 +76,17 @@
 				B57793DE1D7812EA00F92D7E /* Assets.xcassets */,
 			);
 			name = Sample;
+			sourceTree = "<group>";
+		};
+		B57793E81D78150B00F92D7E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B57793EA1D78155500F92D7E /* AHCView.xib */,
+				B57793E51D7814F200F92D7E /* AHCViewController.h */,
+				B57793E91D78152900F92D7E /* AHCViewController+Private.h */,
+				B57793E61D7814F200F92D7E /* AHCViewController.m */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		B5B633011AA1DF4200BBF084 = {
@@ -203,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */,
+				B57793EB1D78155500F92D7E /* AHCView.xib in Resources */,
 				B57793E21D7812F300F92D7E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57793DD1D7812CB00F92D7E /* main.m in Sources */,
+				B57793E71D7814F200F92D7E /* AHCViewController.m in Sources */,
 				B57793DC1D7812CB00F92D7E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
