@@ -20,6 +20,13 @@ static void* ObjectValueKVOContext;
 
 @dynamic objectValue;
 
+#pragma mark - Cleanup
+
+- (void) dealloc
+{
+  [self removeObserver: self forKeyPath: NSStringFromSelector(@selector(objectValue)) context: &ObjectValueKVOContext];
+}
+
 #pragma mark -
 
 - (void) awakeFromNib
