@@ -28,6 +28,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="640"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <tableViewGridLines key="gridStyleMask" dashed="YES"/>
                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                 <tableColumns>
                                     <tableColumn width="480" minWidth="40" maxWidth="1000" id="kpr-0G-fhX">
