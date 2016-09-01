@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+  <dict>
+		<key>name</key>
+		<string>Andrew Adams</string>
+		<key>avatarName</key>
+		<string>b197acb806bb016fbd90d1a0f6011c6cafb0a71c</string>
+		<key>status</key>
+		<string></string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Steven Walters</string>
+		<key>avatarName</key>
+		<string></string>
+		<key>status</key>
+		<string>All your base are belong to us</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Thomas Boyd</string>
+		<key>avatarName</key>
+		<string>29c5f52c7fcfb870b4a22b4477fd61162b0c0813</string>
+		<key>status</key>
+		<string>Don't let me be misunderstood</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Amy Garrett</string>
+		<key>avatarName</key>
+		<string></string>
+		<key>status</key>
+		<string>Working from 7 to 11</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Emma Webb</string>
+		<key>avatarName</key>
+		<string>9e5403114811093818a8daa5d9a1f95edbaff465</string>
+		<key>status</key>
+		<string>Kittens are fuzzy</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Harrison White</string>
+		<key>avatarName</key>
+		<string>5f9654a329bfa919b0b3907efb54ece76b16328f</string>
+		<key>status</key>
+		<string></string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Amber Bowman</string>
+		<key>avatarName</key>
+		<string>9b90c3e22c9c859bf8ffa31ca016011d7944499c</string>
+		<key>status</key>
+		<string>Magic carpet ride!</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Alex Scott</string>
+		<key>avatarName</key>
+		<string>3a65d049905d2b7abb60f7e4a6195433b3485c64</string>
+		<key>status</key>
+		<string>Discovering Venice</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Janis Howard</string>
+		<key>avatarName</key>
+		<string></string>
+		<key>status</key>
+		<string>Summertime</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Gerald Hopkins</string>
+		<key>avatarName</key>
+		<string></string>
+		<key>status</key>
+		<string>Jailbreak</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Ella Anderson</string>
+		<key>avatarName</key>
+		<string></string>
+		<key>status</key>
+		<string>Ramble On</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Alice Smith</string>
+		<key>avatarName</key>
+		<string>21bfc3a4ef1fdd04843c7ab3e369548873b2bb32</string>
+		<key>status</key>
+		<string></string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Charlotte Harris</string>
+		<key>avatarName</key>
+		<string>92b3949de0d021744ff38db72c1ea3c3b6e15552</string>
+		<key>status</key>
+		<string></string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>John Taylor</string>
+		<key>avatarName</key>
+		<string>c08ddc798a249f1aaafff96bcf48ba5622e48bae</string>
+		<key>status</key>
+		<string>Live, love, travel</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Elliot Walker</string>
+		<key>avatarName</key>
+		<string>d2dcdd803676fa25d2a0ab847dd78d25c4711f81</string>
+		<key>status</key>
+		<string>Free hugs!</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Lilly Bell</string>
+		<key>avatarName</key>
+		<string>c3f7a2e83db7ee9ede31377dabf10c1745787653</string>
+		<key>status</key>
+		<string></string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Daisy Campbell</string>
+		<key>avatarName</key>
+		<string></string>
+		<key>status</key>
+		<string>Available</string>
+	</dict>
+
+  <dict>
+		<key>name</key>
+		<string>Jasmine Brown</string>
+		<key>avatarName</key>
+		<string>dff85d5459b00c277b1f72f800d8ac4b389acffa</string>
+		<key>status</key>
+		<string></string>
+	</dict>
+</array>
+</plist>

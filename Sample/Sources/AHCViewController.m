@@ -8,11 +8,16 @@
 
 #import "AHCViewController+Private.h"
 
+#import "AHCUser.h"
+
 #import "AHCUserTableCellView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation AHCViewController
+{
+  NSArray<AHCUser*>* _users;
+}
 
 #pragma mark -
 
@@ -22,10 +27,45 @@ NS_ASSUME_NONNULL_BEGIN
 
   // * * *.
 
+  [self loadUsers];
+
   [self registerCells];
 }
 
 #pragma mark - Private Methods
+
+- (void) loadUsers
+{
+  NSURL* const URL = [[NSBundle mainBundle] URLForResource: @"Users" withExtension: @"plist"];
+
+  NSData* const data = [NSData dataWithContentsOfURL: URL];
+
+  NSError* error;
+
+  NSArray<NSDictionary*>* const userDictionariesOrNil = [NSPropertyListSerialization propertyListWithData: data options: NSPropertyListImmutable format: nil error: &error];
+
+  if(userDictionariesOrNil)
+  {
+    NSMutableArray<AHCUser*>* const mutableUsers = [NSMutableArray arrayWithCapacity: userDictionariesOrNil.count];
+
+    for(NSDictionary* userDictionary in userDictionariesOrNil)
+    {
+      NSString* _Nullable const avatarNameOrNil = userDictionary[@"avatarName"];
+
+      NSImage* const avatar = (avatarNameOrNil? [NSImage imageNamed: avatarNameOrNil] : [NSImage imageNamed: NSImageNameUser]);
+
+      AHCUser* const user = [[AHCUser alloc] initWithName: userDictionary[@"name"] avatar: avatar status: userDictionary[@"status"]];
+
+      [mutableUsers addObject: user];
+    }
+
+    _users = [mutableUsers copy];
+  }
+  else
+  {
+    NSLog(@"%@", error);
+  }
+}
 
 - (void) registerCells
 {

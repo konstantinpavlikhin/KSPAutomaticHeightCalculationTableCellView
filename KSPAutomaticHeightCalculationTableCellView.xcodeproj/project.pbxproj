@@ -17,6 +17,8 @@
 		B57793F21D7819C900F92D7E /* AHCUserTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793F11D7819C900F92D7E /* AHCUserTableCellView.xib */; };
 		B57793F31D781B1200F92D7E /* libKSPAutomaticHeightCalculationTableCellView.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CD03541BCBAC0C0072878A /* libKSPAutomaticHeightCalculationTableCellView.dylib */; };
 		B57793F71D781C9500F92D7E /* AHCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793F61D781C9500F92D7E /* AHCUser.m */; };
+		B57793FA1D781FA000F92D7E /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57793F91D781FA000F92D7E /* Users.plist */; };
+		B57793FC1D78229F00F92D7E /* Users.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57793FB1D78229F00F92D7E /* Users.xcassets */; };
 		B5CD035E1BCBAC210072878A /* KSPAutomaticHeightCalculationTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */; };
 		B5CD035F1BCBB0B00072878A /* KSPAutomaticHeightCalculationTableCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5CD03601BCBB1430072878A /* KSPAutomaticHeightCalculationTableCellView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B6330C1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -41,6 +43,8 @@
 		B57793F51D781C9500F92D7E /* AHCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCUser.h; path = Sample/Sources/AHCUser.h; sourceTree = "<group>"; };
 		B57793F61D781C9500F92D7E /* AHCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCUser.m; path = Sample/Sources/AHCUser.m; sourceTree = "<group>"; };
 		B57793F81D781CAB00F92D7E /* AHCUser+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCUser+Private.h"; path = "Sample/Sources/AHCUser+Private.h"; sourceTree = "<group>"; };
+		B57793F91D781FA000F92D7E /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Users.plist; path = Sample/Resources/Users.plist; sourceTree = "<group>"; };
+		B57793FB1D78229F00F92D7E /* Users.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Users.xcassets; path = Sample/Resources/Users.xcassets; sourceTree = "<group>"; };
 		B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSPAutomaticHeightCalculationTableCellView.h; path = Sources/KSPAutomaticHeightCalculationTableCellView.h; sourceTree = "<group>"; };
 		B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSPAutomaticHeightCalculationTableCellView.m; path = Sources/KSPAutomaticHeightCalculationTableCellView.m; sourceTree = "<group>"; };
 		B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KSPAutomaticHeightCalculationTableCellView.podspec; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				B57793E51D7814F200F92D7E /* AHCViewController.h */,
 				B57793E91D78152900F92D7E /* AHCViewController+Private.h */,
 				B57793E61D7814F200F92D7E /* AHCViewController.m */,
+				B57793F91D781FA000F92D7E /* Users.plist */,
+				B57793FB1D78229F00F92D7E /* Users.xcassets */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 				B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */,
 				B57793EB1D78155500F92D7E /* AHCView.xib in Resources */,
 				B57793E21D7812F300F92D7E /* MainMenu.xib in Resources */,
+				B57793FA1D781FA000F92D7E /* Users.plist in Resources */,
+				B57793FC1D78229F00F92D7E /* Users.xcassets in Resources */,
 				B57793F21D7819C900F92D7E /* AHCUserTableCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
