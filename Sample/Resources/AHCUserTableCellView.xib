@@ -58,6 +58,7 @@
             </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="avatarView" destination="8Ic-Ra-dN2" id="TvJ-Bk-iVG"/>
+                <outlet property="centeringContainer" destination="vdS-Ui-3iw" id="2ti-z4-jZP"/>
                 <outlet property="imageView" destination="8Ic-Ra-dN2" id="7wo-9j-eo3"/>
                 <outlet property="nameLabel" destination="fXv-VH-pZ5" id="Hig-ZI-wMa"/>
                 <outlet property="nameLabelBottomConstraint" destination="6Hl-2v-oFX" id="HdG-Tf-1vC"/>

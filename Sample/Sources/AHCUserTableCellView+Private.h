@@ -12,6 +12,8 @@
 
 @property(readwrite, strong, nonatomic) IBOutlet NSImageView* avatarView;
 
+@property(readwrite, strong, nonatomic) IBOutlet NSView* centeringContainer;
+
 @property(readwrite, strong, nonatomic) IBOutlet NSTextField* nameLabel;
 
 @property(readwrite, strong, nonatomic) IBOutlet NSLayoutConstraint* nameLabelBottomConstraint;
