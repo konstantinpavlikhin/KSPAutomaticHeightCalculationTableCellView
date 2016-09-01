@@ -89,6 +89,19 @@ NS_ASSUME_NONNULL_BEGIN
   return [AHCMessageTableCellView heightWithRepresentedObject: _messages[row] width: self.mainColumn.width];
 }
 
+- (void) tableViewColumnDidResize: (NSNotification*) notification
+{
+  if(notification.userInfo[@"NSTableColumn"] == self.mainColumn)
+  {
+    [NSAnimationContext runAnimationGroup: ^(NSAnimationContext* _Nonnull const context)
+    {
+      context.duration = 0;
+
+      [self.tableView noteHeightOfRowsWithIndexesChanged: [NSIndexSet indexSetWithIndexesInRange: NSMakeRange(0, _messages.count)]];
+    } completionHandler: nil];
+  }
+}
+
 @end
 
 NS_ASSUME_NONNULL_END
