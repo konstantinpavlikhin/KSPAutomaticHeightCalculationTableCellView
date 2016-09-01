@@ -8,6 +8,14 @@
 
 #import "AHCViewController.h"
 
-@interface AHCViewController ()
+NS_ASSUME_NONNULL_BEGIN
+
+@interface AHCViewController () <NSTableViewDataSource, NSTableViewDelegate>
+
+@property(readwrite, strong, nonatomic) IBOutlet NSTableView* tableView;
+
+@property(readwrite, strong, nonatomic) IBOutlet NSTableColumn* mainColumn;
 
 @end
+
+NS_ASSUME_NONNULL_END
