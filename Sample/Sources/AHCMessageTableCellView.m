@@ -25,6 +25,26 @@ static void* ObjectValueKVOContext;
   [self removeObserver: self forKeyPath: NSStringFromSelector(@selector(objectValue)) context: &ObjectValueKVOContext];
 }
 
+#pragma mark - NSView Overrides
+
+- (void) layout
+{
+  [super layout];
+
+  // * * *.
+
+  {{
+    // NSTextField has issues with a text measurement, it underestimates height of a text for a given maximum width.
+    const CGFloat correction = 4;
+
+    self.textLabel.preferredMaxLayoutWidth = (self.textLabel.frame.size.width - correction);
+  }}
+
+  // * * *.
+
+  [super layout];
+}
+
 #pragma mark -
 
 - (void) awakeFromNib
