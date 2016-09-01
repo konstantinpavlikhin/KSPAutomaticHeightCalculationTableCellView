@@ -42,9 +42,9 @@
 
     NSDictionary* const views = @{@"usersView": _usersViewController.view};
 
-    [self.leftPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[usersView]|" options: 0 metrics: nil views: views]];
+    [self.leftPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[usersView(>=150@1000)]|" options: 0 metrics: nil views: views]];
 
-    [self.leftPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[usersView]|" options: 0 metrics: nil views: views]];
+    [self.leftPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[usersView(>=150@1000)]|" options: 0 metrics: nil views: views]];
   }}
 
   // * * *.
@@ -60,9 +60,9 @@
 
     NSDictionary* const views = @{@"messagesView": _messagesViewController.view};
 
-    [self.rightPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[messagesView]|" options: 0 metrics: nil views: views]];
+    [self.rightPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"H:|[messagesView(>=200@1000)]|" options: 0 metrics: nil views: views]];
 
-    [self.rightPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[messagesView]|" options: 0 metrics: nil views: views]];
+    [self.rightPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[messagesView(>=150@1000)]|" options: 0 metrics: nil views: views]];
   }}
 }
 
