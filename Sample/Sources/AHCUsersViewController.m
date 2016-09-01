@@ -1,12 +1,12 @@
 //
-//  AHCViewController.m
+//  AHCUsersViewController.m
 //  KSPAutomaticHeightCalculationTableCellView
 //
 //  Created by Konstantin Pavlikhin on 01.09.16.
 //  Copyright © 2016 Konstantin Pavlikhin. All rights reserved.
 //
 
-#import "AHCViewController+Private.h"
+#import "AHCUsersViewController+Private.h"
 
 #import "AHCUser.h"
 
@@ -14,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@implementation AHCViewController
+@implementation AHCUsersViewController
 {
   NSArray<AHCUser*>* _users;
 }

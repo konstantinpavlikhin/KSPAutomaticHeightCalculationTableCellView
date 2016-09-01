@@ -11,8 +11,8 @@
 		B57793DD1D7812CB00F92D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793D81D7812BA00F92D7E /* main.m */; };
 		B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57793DE1D7812EA00F92D7E /* Assets.xcassets */; };
 		B57793E21D7812F300F92D7E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793E01D7812F300F92D7E /* MainMenu.xib */; };
-		B57793E71D7814F200F92D7E /* AHCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793E61D7814F200F92D7E /* AHCViewController.m */; };
-		B57793EB1D78155500F92D7E /* AHCView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793EA1D78155500F92D7E /* AHCView.xib */; };
+		B57793E71D7814F200F92D7E /* AHCUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793E61D7814F200F92D7E /* AHCUsersViewController.m */; };
+		B57793EB1D78155500F92D7E /* AHCUsersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793EA1D78155500F92D7E /* AHCUsersView.xib */; };
 		B57793EF1D78197200F92D7E /* AHCUserTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793EE1D78197200F92D7E /* AHCUserTableCellView.m */; };
 		B57793F21D7819C900F92D7E /* AHCUserTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793F11D7819C900F92D7E /* AHCUserTableCellView.xib */; };
 		B57793F31D781B1200F92D7E /* libKSPAutomaticHeightCalculationTableCellView.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CD03541BCBAC0C0072878A /* libKSPAutomaticHeightCalculationTableCellView.dylib */; };
@@ -32,10 +32,10 @@
 		B57793DE1D7812EA00F92D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sample/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		B57793E11D7812F300F92D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Sample/Resources/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B57793E31D78134900F92D7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sample/Resources/Info.plist; sourceTree = "<group>"; };
-		B57793E51D7814F200F92D7E /* AHCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCViewController.h; path = Sample/Sources/AHCViewController.h; sourceTree = "<group>"; };
-		B57793E61D7814F200F92D7E /* AHCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCViewController.m; path = Sample/Sources/AHCViewController.m; sourceTree = "<group>"; };
-		B57793E91D78152900F92D7E /* AHCViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCViewController+Private.h"; path = "Sample/Sources/AHCViewController+Private.h"; sourceTree = "<group>"; };
-		B57793EA1D78155500F92D7E /* AHCView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCView.xib; path = Sample/Resources/AHCView.xib; sourceTree = "<group>"; };
+		B57793E51D7814F200F92D7E /* AHCUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCUsersViewController.h; path = Sample/Sources/AHCUsersViewController.h; sourceTree = "<group>"; };
+		B57793E61D7814F200F92D7E /* AHCUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCUsersViewController.m; path = Sample/Sources/AHCUsersViewController.m; sourceTree = "<group>"; };
+		B57793E91D78152900F92D7E /* AHCUsersViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCUsersViewController+Private.h"; path = "Sample/Sources/AHCUsersViewController+Private.h"; sourceTree = "<group>"; };
+		B57793EA1D78155500F92D7E /* AHCUsersView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCUsersView.xib; path = Sample/Resources/AHCUsersView.xib; sourceTree = "<group>"; };
 		B57793ED1D78197200F92D7E /* AHCUserTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCUserTableCellView.h; path = Sample/Sources/AHCUserTableCellView.h; sourceTree = "<group>"; };
 		B57793EE1D78197200F92D7E /* AHCUserTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCUserTableCellView.m; path = Sample/Sources/AHCUserTableCellView.m; sourceTree = "<group>"; };
 		B57793F01D7819A800F92D7E /* AHCUserTableCellView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCUserTableCellView+Private.h"; path = "Sample/Sources/AHCUserTableCellView+Private.h"; sourceTree = "<group>"; };
@@ -99,10 +99,10 @@
 			children = (
 				B57793F41D781C6F00F92D7E /* User */,
 				B57793EC1D78194900F92D7E /* UserTableCell */,
-				B57793EA1D78155500F92D7E /* AHCView.xib */,
-				B57793E51D7814F200F92D7E /* AHCViewController.h */,
-				B57793E91D78152900F92D7E /* AHCViewController+Private.h */,
-				B57793E61D7814F200F92D7E /* AHCViewController.m */,
+				B57793EA1D78155500F92D7E /* AHCUsersView.xib */,
+				B57793E51D7814F200F92D7E /* AHCUsersViewController.h */,
+				B57793E91D78152900F92D7E /* AHCUsersViewController+Private.h */,
+				B57793E61D7814F200F92D7E /* AHCUsersViewController.m */,
 				B57793F91D781FA000F92D7E /* Users.plist */,
 				B57793FB1D78229F00F92D7E /* Users.xcassets */,
 			);
@@ -262,7 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */,
-				B57793EB1D78155500F92D7E /* AHCView.xib in Resources */,
+				B57793EB1D78155500F92D7E /* AHCUsersView.xib in Resources */,
 				B57793E21D7812F300F92D7E /* MainMenu.xib in Resources */,
 				B57793FA1D781FA000F92D7E /* Users.plist in Resources */,
 				B57793FC1D78229F00F92D7E /* Users.xcassets in Resources */,
@@ -278,7 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57793DD1D7812CB00F92D7E /* main.m in Sources */,
-				B57793E71D7814F200F92D7E /* AHCViewController.m in Sources */,
+				B57793E71D7814F200F92D7E /* AHCUsersViewController.m in Sources */,
 				B57793DC1D7812CB00F92D7E /* AppDelegate.m in Sources */,
 				B57793F71D781C9500F92D7E /* AHCUser.m in Sources */,
 				B57793EF1D78197200F92D7E /* AHCUserTableCellView.m in Sources */,
