@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B57793C81D78112700F92D7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793C71D78112700F92D7E /* AppDelegate.m */; };
-		B57793CB1D78112700F92D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793CA1D78112700F92D7E /* main.m */; };
-		B57793CD1D78112700F92D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57793CC1D78112700F92D7E /* Assets.xcassets */; };
-		B57793D01D78112800F92D7E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793CE1D78112800F92D7E /* MainMenu.xib */; };
+		B57793DC1D7812CB00F92D7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793D71D7812BA00F92D7E /* AppDelegate.m */; };
+		B57793DD1D7812CB00F92D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793D81D7812BA00F92D7E /* main.m */; };
+		B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57793DE1D7812EA00F92D7E /* Assets.xcassets */; };
+		B57793E21D7812F300F92D7E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793E01D7812F300F92D7E /* MainMenu.xib */; };
 		B5CD035E1BCBAC210072878A /* KSPAutomaticHeightCalculationTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */; };
 		B5CD035F1BCBB0B00072878A /* KSPAutomaticHeightCalculationTableCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5CD03601BCBB1430072878A /* KSPAutomaticHeightCalculationTableCellView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B6330C1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -18,12 +18,12 @@
 
 /* Begin PBXFileReference section */
 		B57793C41D78112700F92D7E /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B57793C61D78112700F92D7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B57793C71D78112700F92D7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B57793CA1D78112700F92D7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B57793CC1D78112700F92D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B57793CF1D78112800F92D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B57793D11D78112800F92D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B57793D61D7812BA00F92D7E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Sample/Sources/AppDelegate.h; sourceTree = "<group>"; };
+		B57793D71D7812BA00F92D7E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Sample/Sources/AppDelegate.m; sourceTree = "<group>"; };
+		B57793D81D7812BA00F92D7E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sample/Sources/main.m; sourceTree = "<group>"; };
+		B57793DE1D7812EA00F92D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sample/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		B57793E11D7812F300F92D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Sample/Resources/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B57793E31D78134900F92D7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sample/Resources/Info.plist; sourceTree = "<group>"; };
 		B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSPAutomaticHeightCalculationTableCellView.h; path = Sources/KSPAutomaticHeightCalculationTableCellView.h; sourceTree = "<group>"; };
 		B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSPAutomaticHeightCalculationTableCellView.m; path = Sources/KSPAutomaticHeightCalculationTableCellView.m; sourceTree = "<group>"; };
 		B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KSPAutomaticHeightCalculationTableCellView.podspec; sourceTree = "<group>"; };
@@ -54,22 +54,21 @@
 		B57793C51D78112700F92D7E /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				B57793C61D78112700F92D7E /* AppDelegate.h */,
-				B57793C71D78112700F92D7E /* AppDelegate.m */,
-				B57793CC1D78112700F92D7E /* Assets.xcassets */,
-				B57793CE1D78112800F92D7E /* MainMenu.xib */,
-				B57793D11D78112800F92D7E /* Info.plist */,
-				B57793C91D78112700F92D7E /* Supporting Files */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
 		};
-		B57793C91D78112700F92D7E /* Supporting Files */ = {
+		B57793D51D78129500F92D7E /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				B57793CA1D78112700F92D7E /* main.m */,
+				B57793D61D7812BA00F92D7E /* AppDelegate.h */,
+				B57793D71D7812BA00F92D7E /* AppDelegate.m */,
+				B57793D81D7812BA00F92D7E /* main.m */,
+				B57793E31D78134900F92D7E /* Info.plist */,
+				B57793E01D7812F300F92D7E /* MainMenu.xib */,
+				B57793DE1D7812EA00F92D7E /* Assets.xcassets */,
 			);
-			name = "Supporting Files";
+			name = Sample;
 			sourceTree = "<group>";
 		};
 		B5B633011AA1DF4200BBF084 = {
@@ -77,6 +76,7 @@
 			children = (
 				B5B633081AA1DF6F00BBF084 /* KSPAutomaticHeightCalculationTableCellView */,
 				B5B6330F1AA1DFAD00BBF084 /* Resources */,
+				B57793D51D78129500F92D7E /* Sample */,
 				B57793C51D78112700F92D7E /* Sample */,
 				B5CD03551BCBAC0C0072878A /* Products */,
 			);
@@ -202,8 +202,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B57793CD1D78112700F92D7E /* Assets.xcassets in Resources */,
-				B57793D01D78112800F92D7E /* MainMenu.xib in Resources */,
+				B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */,
+				B57793E21D7812F300F92D7E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B57793CB1D78112700F92D7E /* main.m in Sources */,
-				B57793C81D78112700F92D7E /* AppDelegate.m in Sources */,
+				B57793DD1D7812CB00F92D7E /* main.m in Sources */,
+				B57793DC1D7812CB00F92D7E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,10 +230,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B57793CE1D78112800F92D7E /* MainMenu.xib */ = {
+		B57793E01D7812F300F92D7E /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B57793CF1D78112800F92D7E /* Base */,
+				B57793E11D7812F300F92D7E /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -279,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_FILE = Sample/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -322,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Sample/Info.plist;
+				INFOPLIST_FILE = Sample/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
