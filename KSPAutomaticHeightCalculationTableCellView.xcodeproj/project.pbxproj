@@ -87,13 +87,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B57793C51D78112700F92D7E /* Sample */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sample;
-			sourceTree = "<group>";
-		};
 		B57793D51D78129500F92D7E /* Sample */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +168,6 @@
 				B5B633081AA1DF6F00BBF084 /* KSPAutomaticHeightCalculationTableCellView */,
 				B5B6330F1AA1DFAD00BBF084 /* Resources */,
 				B57793D51D78129500F92D7E /* Sample */,
-				B57793C51D78112700F92D7E /* Sample */,
 				B5CD03551BCBAC0C0072878A /* Products */,
 			);
 			sourceTree = "<group>";
