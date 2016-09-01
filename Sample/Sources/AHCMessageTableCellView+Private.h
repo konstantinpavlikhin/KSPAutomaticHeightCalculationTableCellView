@@ -10,4 +10,6 @@
 
 @interface AHCMessageTableCellView ()
 
+@property(readwrite, strong, nonatomic) IBOutlet NSTextField* textLabel;
+
 @end
