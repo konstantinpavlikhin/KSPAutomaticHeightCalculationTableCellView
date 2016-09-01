@@ -8,6 +8,8 @@
 
 #import "AHCMessagesViewController+Private.h"
 
+#import "AHCMessageTableCellView.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation AHCMessagesViewController
@@ -56,6 +58,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) registerCells
 {
+  NSString* const className = NSStringFromClass([AHCMessageTableCellView class]);
+
+  [self.tableView registerNib: [[NSNib alloc] initWithNibNamed: className bundle: nil] forIdentifier: className];
 }
 
 #pragma mark - NSTableViewDataSource Protocol Implementation
@@ -74,12 +79,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (nullable NSView*) tableView: (NSTableView*) tableView viewForTableColumn: (nullable NSTableColumn*) tableColumn row: (NSInteger) row
 {
-  return nil;
+  NSString* const className = NSStringFromClass([AHCMessageTableCellView class]);
+
+  return [tableView makeViewWithIdentifier: className owner: nil];
 }
 
 - (CGFloat) tableView: (NSTableView*) tableView heightOfRow: (NSInteger) row
 {
-  return 0;
+  return [AHCMessageTableCellView heightWithRepresentedObject: _messages[row] width: self.mainColumn.width];
 }
 
 @end
