@@ -30,6 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
   [self loadUsers];
 
   [self registerCells];
+
+  // * * *.
+
+  [self.tableView reloadData];
 }
 
 #pragma mark - Private Methods
@@ -78,24 +82,26 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSInteger) numberOfRowsInTableView: (NSTableView*) tableView
 {
-  return 0;
+  return _users.count;
 }
 
 - (nullable id) tableView: (NSTableView*) tableView objectValueForTableColumn: (nullable NSTableColumn*) tableColumn row: (NSInteger) row
 {
-  return nil;
+  return _users[row];
 }
 
 #pragma mark - NSTableViewDelegate Protocol Implementation
 
 - (nullable NSView*) tableView: (NSTableView*) tableView viewForTableColumn: (nullable NSTableColumn*) tableColumn row: (NSInteger) row
 {
-  return nil;
+  NSString* const className = NSStringFromClass([AHCUserTableCellView class]);
+
+  return [tableView makeViewWithIdentifier: className owner: nil];
 }
 
 - (CGFloat) tableView: (NSTableView*) tableView heightOfRow: (NSInteger) row
 {
-  return 0;
+  return [AHCUserTableCellView heightWithRepresentedObject: _users[row] width: self.mainColumn.width];
 }
 
 @end
