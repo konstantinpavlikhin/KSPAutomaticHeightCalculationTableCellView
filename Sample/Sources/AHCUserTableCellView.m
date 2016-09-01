@@ -74,6 +74,8 @@ static void* ObjectValueKVOContext;
         [self.centeringContainer addConstraint: self.nameLabelBottomConstraint];
       }
     }
+
+    self.statusLabel.objectValue = self.objectValue.status;
   }
   else
   {
