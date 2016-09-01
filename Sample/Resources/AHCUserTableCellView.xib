@@ -18,7 +18,7 @@
                         <constraint firstAttribute="width" constant="34" id="Dae-Ya-eW7"/>
                         <constraint firstAttribute="height" constant="34" id="xBb-66-VoX"/>
                     </constraints>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSUser" id="yFk-Je-lH2" userLabel="AvatarViewCell" customClass="ATMRoundedAvatarImageCell"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSUser" id="yFk-Je-lH2" userLabel="AvatarViewCell"/>
                 </imageView>
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="vdS-Ui-3iw" userLabel="CenteringContainer">
                     <rect key="frame" x="64" y="12" width="69" height="17"/>
@@ -51,11 +51,6 @@
                 <constraint firstItem="vdS-Ui-3iw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Squ-wh-1N9" secondAttribute="top" id="gO1-0B-alo"/>
                 <constraint firstItem="vdS-Ui-3iw" firstAttribute="leading" secondItem="8Ic-Ra-dN2" secondAttribute="trailing" constant="10" id="npf-hx-BS9"/>
             </constraints>
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="number" keyPath="leadingPadding">
-                    <real key="value" value="20"/>
-                </userDefinedRuntimeAttribute>
-            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="avatarView" destination="8Ic-Ra-dN2" id="TvJ-Bk-iVG"/>
                 <outlet property="centeringContainer" destination="vdS-Ui-3iw" id="2ti-z4-jZP"/>
