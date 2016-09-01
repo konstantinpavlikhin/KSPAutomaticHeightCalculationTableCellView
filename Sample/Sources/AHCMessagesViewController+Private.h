@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AHCMessagesViewController ()
+@interface AHCMessagesViewController () <NSTableViewDataSource, NSTableViewDelegate>
+
+@property(readwrite, strong, nonatomic) IBOutlet NSTableView* tableView;
+
+@property(readwrite, strong, nonatomic) IBOutlet NSTableColumn* mainColumn;
 
 @end
 
