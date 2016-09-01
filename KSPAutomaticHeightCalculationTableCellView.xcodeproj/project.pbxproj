@@ -22,6 +22,8 @@
 		B57794001D78358900F92D7E /* AHCMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793FF1D78358900F92D7E /* AHCMessagesViewController.m */; };
 		B57794031D78360D00F92D7E /* AHCMessagesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57794021D78360D00F92D7E /* AHCMessagesView.xib */; };
 		B57794051D783A8400F92D7E /* Messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57794041D783A8400F92D7E /* Messages.plist */; };
+		B57794091D783E1400F92D7E /* AHCMessageTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57794081D783E1400F92D7E /* AHCMessageTableCellView.m */; };
+		B577940C1D783E6500F92D7E /* AHCMessageTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B577940B1D783E6500F92D7E /* AHCMessageTableCellView.xib */; };
 		B5CD035E1BCBAC210072878A /* KSPAutomaticHeightCalculationTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */; };
 		B5CD035F1BCBB0B00072878A /* KSPAutomaticHeightCalculationTableCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5CD03601BCBB1430072878A /* KSPAutomaticHeightCalculationTableCellView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B6330C1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -53,6 +55,10 @@
 		B57794011D7835E600F92D7E /* AHCMessagesViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCMessagesViewController+Private.h"; path = "Sample/Sources/AHCMessagesViewController+Private.h"; sourceTree = "<group>"; };
 		B57794021D78360D00F92D7E /* AHCMessagesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCMessagesView.xib; path = Sample/Resources/AHCMessagesView.xib; sourceTree = "<group>"; };
 		B57794041D783A8400F92D7E /* Messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Messages.plist; path = Sample/Resources/Messages.plist; sourceTree = "<group>"; };
+		B57794071D783E1400F92D7E /* AHCMessageTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCMessageTableCellView.h; path = Sample/Sources/AHCMessageTableCellView.h; sourceTree = "<group>"; };
+		B57794081D783E1400F92D7E /* AHCMessageTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCMessageTableCellView.m; path = Sample/Sources/AHCMessageTableCellView.m; sourceTree = "<group>"; };
+		B577940A1D783E2F00F92D7E /* AHCMessageTableCellView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCMessageTableCellView+Private.h"; path = "Sample/Sources/AHCMessageTableCellView+Private.h"; sourceTree = "<group>"; };
+		B577940B1D783E6500F92D7E /* AHCMessageTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCMessageTableCellView.xib; path = Sample/Resources/AHCMessageTableCellView.xib; sourceTree = "<group>"; };
 		B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSPAutomaticHeightCalculationTableCellView.h; path = Sources/KSPAutomaticHeightCalculationTableCellView.h; sourceTree = "<group>"; };
 		B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSPAutomaticHeightCalculationTableCellView.m; path = Sources/KSPAutomaticHeightCalculationTableCellView.m; sourceTree = "<group>"; };
 		B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KSPAutomaticHeightCalculationTableCellView.podspec; sourceTree = "<group>"; };
@@ -107,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B57793F41D781C6F00F92D7E /* User */,
-				B57793EC1D78194900F92D7E /* UserTableCell */,
+				B57793EC1D78194900F92D7E /* UserTableCellView */,
 				B57793EA1D78155500F92D7E /* AHCUsersView.xib */,
 				B57793E51D7814F200F92D7E /* AHCUsersViewController.h */,
 				B57793E91D78152900F92D7E /* AHCUsersViewController+Private.h */,
@@ -118,7 +124,7 @@
 			name = UsersViewController;
 			sourceTree = "<group>";
 		};
-		B57793EC1D78194900F92D7E /* UserTableCell */ = {
+		B57793EC1D78194900F92D7E /* UserTableCellView */ = {
 			isa = PBXGroup;
 			children = (
 				B57793F11D7819C900F92D7E /* AHCUserTableCellView.xib */,
@@ -126,7 +132,7 @@
 				B57793F01D7819A800F92D7E /* AHCUserTableCellView+Private.h */,
 				B57793EE1D78197200F92D7E /* AHCUserTableCellView.m */,
 			);
-			name = UserTableCell;
+			name = UserTableCellView;
 			sourceTree = "<group>";
 		};
 		B57793F41D781C6F00F92D7E /* User */ = {
@@ -142,6 +148,7 @@
 		B57793FD1D7834F200F92D7E /* MessagesViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B57794061D783DED00F92D7E /* MessageTableCellView */,
 				B57794021D78360D00F92D7E /* AHCMessagesView.xib */,
 				B57793FE1D78358900F92D7E /* AHCMessagesViewController.h */,
 				B57794011D7835E600F92D7E /* AHCMessagesViewController+Private.h */,
@@ -149,6 +156,17 @@
 				B57794041D783A8400F92D7E /* Messages.plist */,
 			);
 			name = MessagesViewController;
+			sourceTree = "<group>";
+		};
+		B57794061D783DED00F92D7E /* MessageTableCellView */ = {
+			isa = PBXGroup;
+			children = (
+				B577940B1D783E6500F92D7E /* AHCMessageTableCellView.xib */,
+				B57794071D783E1400F92D7E /* AHCMessageTableCellView.h */,
+				B577940A1D783E2F00F92D7E /* AHCMessageTableCellView+Private.h */,
+				B57794081D783E1400F92D7E /* AHCMessageTableCellView.m */,
+			);
+			name = MessageTableCellView;
 			sourceTree = "<group>";
 		};
 		B5B633011AA1DF4200BBF084 = {
@@ -283,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B57794051D783A8400F92D7E /* Messages.plist in Resources */,
+				B577940C1D783E6500F92D7E /* AHCMessageTableCellView.xib in Resources */,
 				B57794031D78360D00F92D7E /* AHCMessagesView.xib in Resources */,
 				B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */,
 				B57793EB1D78155500F92D7E /* AHCUsersView.xib in Resources */,
@@ -306,6 +325,7 @@
 				B57794001D78358900F92D7E /* AHCMessagesViewController.m in Sources */,
 				B57793F71D781C9500F92D7E /* AHCUser.m in Sources */,
 				B57793EF1D78197200F92D7E /* AHCUserTableCellView.m in Sources */,
+				B57794091D783E1400F92D7E /* AHCMessageTableCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
