@@ -16,6 +16,7 @@
 		B57793EF1D78197200F92D7E /* AHCUserTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793EE1D78197200F92D7E /* AHCUserTableCellView.m */; };
 		B57793F21D7819C900F92D7E /* AHCUserTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793F11D7819C900F92D7E /* AHCUserTableCellView.xib */; };
 		B57793F31D781B1200F92D7E /* libKSPAutomaticHeightCalculationTableCellView.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CD03541BCBAC0C0072878A /* libKSPAutomaticHeightCalculationTableCellView.dylib */; };
+		B57793F71D781C9500F92D7E /* AHCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793F61D781C9500F92D7E /* AHCUser.m */; };
 		B5CD035E1BCBAC210072878A /* KSPAutomaticHeightCalculationTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */; };
 		B5CD035F1BCBB0B00072878A /* KSPAutomaticHeightCalculationTableCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5CD03601BCBB1430072878A /* KSPAutomaticHeightCalculationTableCellView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B6330C1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -37,6 +38,9 @@
 		B57793EE1D78197200F92D7E /* AHCUserTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCUserTableCellView.m; path = Sample/Sources/AHCUserTableCellView.m; sourceTree = "<group>"; };
 		B57793F01D7819A800F92D7E /* AHCUserTableCellView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCUserTableCellView+Private.h"; path = "Sample/Sources/AHCUserTableCellView+Private.h"; sourceTree = "<group>"; };
 		B57793F11D7819C900F92D7E /* AHCUserTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCUserTableCellView.xib; path = Sample/Resources/AHCUserTableCellView.xib; sourceTree = "<group>"; };
+		B57793F51D781C9500F92D7E /* AHCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCUser.h; path = Sample/Sources/AHCUser.h; sourceTree = "<group>"; };
+		B57793F61D781C9500F92D7E /* AHCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCUser.m; path = Sample/Sources/AHCUser.m; sourceTree = "<group>"; };
+		B57793F81D781CAB00F92D7E /* AHCUser+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCUser+Private.h"; path = "Sample/Sources/AHCUser+Private.h"; sourceTree = "<group>"; };
 		B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSPAutomaticHeightCalculationTableCellView.h; path = Sources/KSPAutomaticHeightCalculationTableCellView.h; sourceTree = "<group>"; };
 		B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSPAutomaticHeightCalculationTableCellView.m; path = Sources/KSPAutomaticHeightCalculationTableCellView.m; sourceTree = "<group>"; };
 		B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KSPAutomaticHeightCalculationTableCellView.podspec; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 		B57793E81D78150B00F92D7E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B57793F41D781C6F00F92D7E /* User */,
 				B57793EC1D78194900F92D7E /* UserTableCell */,
 				B57793EA1D78155500F92D7E /* AHCView.xib */,
 				B57793E51D7814F200F92D7E /* AHCViewController.h */,
@@ -107,6 +112,16 @@
 				B57793EE1D78197200F92D7E /* AHCUserTableCellView.m */,
 			);
 			name = UserTableCell;
+			sourceTree = "<group>";
+		};
+		B57793F41D781C6F00F92D7E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B57793F51D781C9500F92D7E /* AHCUser.h */,
+				B57793F81D781CAB00F92D7E /* AHCUser+Private.h */,
+				B57793F61D781C9500F92D7E /* AHCUser.m */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 		B5B633011AA1DF4200BBF084 = {
@@ -257,6 +272,7 @@
 				B57793DD1D7812CB00F92D7E /* main.m in Sources */,
 				B57793E71D7814F200F92D7E /* AHCViewController.m in Sources */,
 				B57793DC1D7812CB00F92D7E /* AppDelegate.m in Sources */,
+				B57793F71D781C9500F92D7E /* AHCUser.m in Sources */,
 				B57793EF1D78197200F92D7E /* AHCUserTableCellView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

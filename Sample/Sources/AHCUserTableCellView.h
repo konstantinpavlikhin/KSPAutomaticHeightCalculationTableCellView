@@ -8,6 +8,14 @@
 
 #import <KSPAutomaticHeightCalculationTableCellView/KSPAutomaticHeightCalculationTableCellView+Private.h>
 
+// * * *.
+
+@class AHCUser;
+
+// * * *.
+
 @interface AHCUserTableCellView : KSPAutomaticHeightCalculationTableCellView
+
+@property(readwrite, strong, atomic, nullable) AHCUser* objectValue;
 
 @end

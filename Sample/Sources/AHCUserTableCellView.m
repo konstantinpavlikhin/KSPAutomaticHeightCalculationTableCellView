@@ -10,4 +10,6 @@
 
 @implementation AHCUserTableCellView
 
+@dynamic objectValue;
+
 @end
