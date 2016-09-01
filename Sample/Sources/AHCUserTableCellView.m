@@ -27,6 +27,13 @@ static void* ObjectValueKVOContext;
   [self removeObserver: self forKeyPath: NSStringFromSelector(@selector(objectValue)) context: &ObjectValueKVOContext];
 }
 
+#pragma mark - KSPAutomaticHeightCalculationTableCellView Overrides
+
++ (BOOL) hasFixedHeight
+{
+  return YES;
+}
+
 #pragma mark -
 
 - (void) awakeFromNib
