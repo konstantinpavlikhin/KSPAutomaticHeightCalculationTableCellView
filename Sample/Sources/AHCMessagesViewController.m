@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation AHCMessagesViewController
+{
+  NSArray<NSString*>* _messages;
+}
 
 #pragma mark -
 
@@ -33,6 +36,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) loadMessages
 {
+  NSURL* const URL = [[NSBundle mainBundle] URLForResource: @"Messages" withExtension: @"plist"];
+
+  NSData* const data = [NSData dataWithContentsOfURL: URL];
+
+  NSError* error;
+
+  NSArray<NSString*>* const messagesOrNil = [NSPropertyListSerialization propertyListWithData: data options: NSPropertyListImmutable format: nil error: &error];
+
+  if(messagesOrNil)
+  {
+    _messages = messagesOrNil;
+  }
+  else
+  {
+    NSLog(@"%@", error);
+  }
 }
 
 - (void) registerCells
@@ -43,12 +62,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSInteger) numberOfRowsInTableView: (NSTableView*) tableView
 {
-  return 0;
+  return _messages.count;
 }
 
 - (nullable id) tableView: (NSTableView*) tableView objectValueForTableColumn: (nullable NSTableColumn*) tableColumn row: (NSInteger) row
 {
-  return nil;
+  return _messages[row];
 }
 
 #pragma mark - NSTableViewDelegate Protocol Implementation

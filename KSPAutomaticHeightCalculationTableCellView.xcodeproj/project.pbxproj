@@ -21,6 +21,7 @@
 		B57793FC1D78229F00F92D7E /* Users.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57793FB1D78229F00F92D7E /* Users.xcassets */; };
 		B57794001D78358900F92D7E /* AHCMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793FF1D78358900F92D7E /* AHCMessagesViewController.m */; };
 		B57794031D78360D00F92D7E /* AHCMessagesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57794021D78360D00F92D7E /* AHCMessagesView.xib */; };
+		B57794051D783A8400F92D7E /* Messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57794041D783A8400F92D7E /* Messages.plist */; };
 		B5CD035E1BCBAC210072878A /* KSPAutomaticHeightCalculationTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */; };
 		B5CD035F1BCBB0B00072878A /* KSPAutomaticHeightCalculationTableCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5CD03601BCBB1430072878A /* KSPAutomaticHeightCalculationTableCellView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B6330C1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -51,6 +52,7 @@
 		B57793FF1D78358900F92D7E /* AHCMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCMessagesViewController.m; path = Sample/Sources/AHCMessagesViewController.m; sourceTree = "<group>"; };
 		B57794011D7835E600F92D7E /* AHCMessagesViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCMessagesViewController+Private.h"; path = "Sample/Sources/AHCMessagesViewController+Private.h"; sourceTree = "<group>"; };
 		B57794021D78360D00F92D7E /* AHCMessagesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCMessagesView.xib; path = Sample/Resources/AHCMessagesView.xib; sourceTree = "<group>"; };
+		B57794041D783A8400F92D7E /* Messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Messages.plist; path = Sample/Resources/Messages.plist; sourceTree = "<group>"; };
 		B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSPAutomaticHeightCalculationTableCellView.h; path = Sources/KSPAutomaticHeightCalculationTableCellView.h; sourceTree = "<group>"; };
 		B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSPAutomaticHeightCalculationTableCellView.m; path = Sources/KSPAutomaticHeightCalculationTableCellView.m; sourceTree = "<group>"; };
 		B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KSPAutomaticHeightCalculationTableCellView.podspec; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				B57793FE1D78358900F92D7E /* AHCMessagesViewController.h */,
 				B57794011D7835E600F92D7E /* AHCMessagesViewController+Private.h */,
 				B57793FF1D78358900F92D7E /* AHCMessagesViewController.m */,
+				B57794041D783A8400F92D7E /* Messages.plist */,
 			);
 			name = MessagesViewController;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57794051D783A8400F92D7E /* Messages.plist in Resources */,
 				B57794031D78360D00F92D7E /* AHCMessagesView.xib in Resources */,
 				B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */,
 				B57793EB1D78155500F92D7E /* AHCUsersView.xib in Resources */,
