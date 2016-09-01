@@ -31,7 +31,7 @@
                                 <tableViewGridLines key="gridStyleMask" dashed="YES"/>
                                 <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                 <tableColumns>
-                                    <tableColumn width="480" minWidth="40" maxWidth="1000" id="kpr-0G-fhX">
+                                    <tableColumn width="480" minWidth="40" maxWidth="10000" id="kpr-0G-fhX">
                                         <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                             <font key="font" metaFont="smallSystem"/>
                                             <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
