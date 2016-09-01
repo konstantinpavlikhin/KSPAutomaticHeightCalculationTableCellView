@@ -56,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
     {
       NSString* _Nullable const avatarNameOrNil = userDictionary[@"avatarName"];
 
-      NSImage* const avatar = (avatarNameOrNil? [NSImage imageNamed: avatarNameOrNil] : [NSImage imageNamed: NSImageNameUser]);
+      NSImage* const avatar = ((avatarNameOrNil.length > 0)? [NSImage imageNamed: avatarNameOrNil] : [NSImage imageNamed: NSImageNameUser]);
 
       AHCUser* const user = [[AHCUser alloc] initWithName: userDictionary[@"name"] avatar: avatar status: userDictionary[@"status"]];
 
