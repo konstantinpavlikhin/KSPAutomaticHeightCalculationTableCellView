@@ -8,6 +8,8 @@
 
 #import "AHCViewController+Private.h"
 
+#import "AHCUserTableCellView.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @implementation AHCViewController
@@ -27,6 +29,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void) registerCells
 {
+  NSString* const className = NSStringFromClass([AHCUserTableCellView class]);
+
+  [self.tableView registerNib: [[NSNib alloc] initWithNibNamed: className bundle: nil] forIdentifier: className];
 }
 
 #pragma mark - NSTableViewDataSource Protocol Implementation
