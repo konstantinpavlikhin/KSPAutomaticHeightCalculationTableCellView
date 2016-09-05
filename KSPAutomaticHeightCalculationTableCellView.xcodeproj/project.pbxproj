@@ -385,7 +385,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.konstantinpavlikhin.Sample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.konstantinpavlikhin.KSPAutomaticHeightCalculationTableCellViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -428,7 +428,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.konstantinpavlikhin.Sample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.konstantinpavlikhin.KSPAutomaticHeightCalculationTableCellViewSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -541,6 +541,7 @@
 				B57793D31D78112800F92D7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5B633051AA1DF4200BBF084 /* Build configuration list for PBXProject "KSPAutomaticHeightCalculationTableCellView" */ = {
 			isa = XCConfigurationList;
