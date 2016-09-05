@@ -7,12 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B57793DC1D7812CB00F92D7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793D71D7812BA00F92D7E /* AppDelegate.m */; };
+		B57793DD1D7812CB00F92D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793D81D7812BA00F92D7E /* main.m */; };
+		B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57793DE1D7812EA00F92D7E /* Assets.xcassets */; };
+		B57793E21D7812F300F92D7E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793E01D7812F300F92D7E /* MainMenu.xib */; };
+		B57793E71D7814F200F92D7E /* AHCUsersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793E61D7814F200F92D7E /* AHCUsersViewController.m */; };
+		B57793EB1D78155500F92D7E /* AHCUsersView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793EA1D78155500F92D7E /* AHCUsersView.xib */; };
+		B57793EF1D78197200F92D7E /* AHCUserTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793EE1D78197200F92D7E /* AHCUserTableCellView.m */; };
+		B57793F21D7819C900F92D7E /* AHCUserTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57793F11D7819C900F92D7E /* AHCUserTableCellView.xib */; };
+		B57793F31D781B1200F92D7E /* libKSPAutomaticHeightCalculationTableCellView.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CD03541BCBAC0C0072878A /* libKSPAutomaticHeightCalculationTableCellView.dylib */; };
+		B57793F71D781C9500F92D7E /* AHCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793F61D781C9500F92D7E /* AHCUser.m */; };
+		B57793FA1D781FA000F92D7E /* Users.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57793F91D781FA000F92D7E /* Users.plist */; };
+		B57793FC1D78229F00F92D7E /* Users.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B57793FB1D78229F00F92D7E /* Users.xcassets */; };
+		B57794001D78358900F92D7E /* AHCMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B57793FF1D78358900F92D7E /* AHCMessagesViewController.m */; };
+		B57794031D78360D00F92D7E /* AHCMessagesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B57794021D78360D00F92D7E /* AHCMessagesView.xib */; };
+		B57794051D783A8400F92D7E /* Messages.plist in Resources */ = {isa = PBXBuildFile; fileRef = B57794041D783A8400F92D7E /* Messages.plist */; };
+		B57794091D783E1400F92D7E /* AHCMessageTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B57794081D783E1400F92D7E /* AHCMessageTableCellView.m */; };
+		B577940C1D783E6500F92D7E /* AHCMessageTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B577940B1D783E6500F92D7E /* AHCMessageTableCellView.xib */; };
 		B5CD035E1BCBAC210072878A /* KSPAutomaticHeightCalculationTableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */; };
 		B5CD035F1BCBB0B00072878A /* KSPAutomaticHeightCalculationTableCellView.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5CD03601BCBB1430072878A /* KSPAutomaticHeightCalculationTableCellView+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B6330C1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B57793C41D78112700F92D7E /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B57793D61D7812BA00F92D7E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Sample/Sources/AppDelegate.h; sourceTree = "<group>"; };
+		B57793D71D7812BA00F92D7E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Sample/Sources/AppDelegate.m; sourceTree = "<group>"; };
+		B57793D81D7812BA00F92D7E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sample/Sources/main.m; sourceTree = "<group>"; };
+		B57793DE1D7812EA00F92D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Sample/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		B57793E11D7812F300F92D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Sample/Resources/Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B57793E31D78134900F92D7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sample/Resources/Info.plist; sourceTree = "<group>"; };
+		B57793E51D7814F200F92D7E /* AHCUsersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCUsersViewController.h; path = Sample/Sources/AHCUsersViewController.h; sourceTree = "<group>"; };
+		B57793E61D7814F200F92D7E /* AHCUsersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCUsersViewController.m; path = Sample/Sources/AHCUsersViewController.m; sourceTree = "<group>"; };
+		B57793E91D78152900F92D7E /* AHCUsersViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCUsersViewController+Private.h"; path = "Sample/Sources/AHCUsersViewController+Private.h"; sourceTree = "<group>"; };
+		B57793EA1D78155500F92D7E /* AHCUsersView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCUsersView.xib; path = Sample/Resources/AHCUsersView.xib; sourceTree = "<group>"; };
+		B57793ED1D78197200F92D7E /* AHCUserTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCUserTableCellView.h; path = Sample/Sources/AHCUserTableCellView.h; sourceTree = "<group>"; };
+		B57793EE1D78197200F92D7E /* AHCUserTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCUserTableCellView.m; path = Sample/Sources/AHCUserTableCellView.m; sourceTree = "<group>"; };
+		B57793F01D7819A800F92D7E /* AHCUserTableCellView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCUserTableCellView+Private.h"; path = "Sample/Sources/AHCUserTableCellView+Private.h"; sourceTree = "<group>"; };
+		B57793F11D7819C900F92D7E /* AHCUserTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCUserTableCellView.xib; path = Sample/Resources/AHCUserTableCellView.xib; sourceTree = "<group>"; };
+		B57793F51D781C9500F92D7E /* AHCUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCUser.h; path = Sample/Sources/AHCUser.h; sourceTree = "<group>"; };
+		B57793F61D781C9500F92D7E /* AHCUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCUser.m; path = Sample/Sources/AHCUser.m; sourceTree = "<group>"; };
+		B57793F81D781CAB00F92D7E /* AHCUser+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCUser+Private.h"; path = "Sample/Sources/AHCUser+Private.h"; sourceTree = "<group>"; };
+		B57793F91D781FA000F92D7E /* Users.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Users.plist; path = Sample/Resources/Users.plist; sourceTree = "<group>"; };
+		B57793FB1D78229F00F92D7E /* Users.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Users.xcassets; path = Sample/Resources/Users.xcassets; sourceTree = "<group>"; };
+		B57793FE1D78358900F92D7E /* AHCMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCMessagesViewController.h; path = Sample/Sources/AHCMessagesViewController.h; sourceTree = "<group>"; };
+		B57793FF1D78358900F92D7E /* AHCMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCMessagesViewController.m; path = Sample/Sources/AHCMessagesViewController.m; sourceTree = "<group>"; };
+		B57794011D7835E600F92D7E /* AHCMessagesViewController+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCMessagesViewController+Private.h"; path = "Sample/Sources/AHCMessagesViewController+Private.h"; sourceTree = "<group>"; };
+		B57794021D78360D00F92D7E /* AHCMessagesView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCMessagesView.xib; path = Sample/Resources/AHCMessagesView.xib; sourceTree = "<group>"; };
+		B57794041D783A8400F92D7E /* Messages.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Messages.plist; path = Sample/Resources/Messages.plist; sourceTree = "<group>"; };
+		B57794071D783E1400F92D7E /* AHCMessageTableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHCMessageTableCellView.h; path = Sample/Sources/AHCMessageTableCellView.h; sourceTree = "<group>"; };
+		B57794081D783E1400F92D7E /* AHCMessageTableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AHCMessageTableCellView.m; path = Sample/Sources/AHCMessageTableCellView.m; sourceTree = "<group>"; };
+		B577940A1D783E2F00F92D7E /* AHCMessageTableCellView+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AHCMessageTableCellView+Private.h"; path = "Sample/Sources/AHCMessageTableCellView+Private.h"; sourceTree = "<group>"; };
+		B577940B1D783E6500F92D7E /* AHCMessageTableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AHCMessageTableCellView.xib; path = Sample/Resources/AHCMessageTableCellView.xib; sourceTree = "<group>"; };
 		B5B633091AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = KSPAutomaticHeightCalculationTableCellView.h; path = Sources/KSPAutomaticHeightCalculationTableCellView.h; sourceTree = "<group>"; };
 		B5B6330A1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = KSPAutomaticHeightCalculationTableCellView.m; path = Sources/KSPAutomaticHeightCalculationTableCellView.m; sourceTree = "<group>"; };
 		B5B6330B1AA1DF9B00BBF084 /* KSPAutomaticHeightCalculationTableCellView.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KSPAutomaticHeightCalculationTableCellView.podspec; sourceTree = "<group>"; };
@@ -23,6 +69,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B57793C11D78112700F92D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57793F31D781B1200F92D7E /* libKSPAutomaticHeightCalculationTableCellView.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5CD03511BCBAC0C0072878A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,11 +87,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B57793D51D78129500F92D7E /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				B57793E81D78150B00F92D7E /* UsersViewController */,
+				B57793FD1D7834F200F92D7E /* MessagesViewController */,
+				B57793D61D7812BA00F92D7E /* AppDelegate.h */,
+				B57793D71D7812BA00F92D7E /* AppDelegate.m */,
+				B57793D81D7812BA00F92D7E /* main.m */,
+				B57793E31D78134900F92D7E /* Info.plist */,
+				B57793E01D7812F300F92D7E /* MainMenu.xib */,
+				B57793DE1D7812EA00F92D7E /* Assets.xcassets */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
+		B57793E81D78150B00F92D7E /* UsersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B57793F41D781C6F00F92D7E /* User */,
+				B57793EC1D78194900F92D7E /* UserTableCellView */,
+				B57793EA1D78155500F92D7E /* AHCUsersView.xib */,
+				B57793E51D7814F200F92D7E /* AHCUsersViewController.h */,
+				B57793E91D78152900F92D7E /* AHCUsersViewController+Private.h */,
+				B57793E61D7814F200F92D7E /* AHCUsersViewController.m */,
+				B57793F91D781FA000F92D7E /* Users.plist */,
+				B57793FB1D78229F00F92D7E /* Users.xcassets */,
+			);
+			name = UsersViewController;
+			sourceTree = "<group>";
+		};
+		B57793EC1D78194900F92D7E /* UserTableCellView */ = {
+			isa = PBXGroup;
+			children = (
+				B57793F11D7819C900F92D7E /* AHCUserTableCellView.xib */,
+				B57793ED1D78197200F92D7E /* AHCUserTableCellView.h */,
+				B57793F01D7819A800F92D7E /* AHCUserTableCellView+Private.h */,
+				B57793EE1D78197200F92D7E /* AHCUserTableCellView.m */,
+			);
+			name = UserTableCellView;
+			sourceTree = "<group>";
+		};
+		B57793F41D781C6F00F92D7E /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B57793F51D781C9500F92D7E /* AHCUser.h */,
+				B57793F81D781CAB00F92D7E /* AHCUser+Private.h */,
+				B57793F61D781C9500F92D7E /* AHCUser.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		B57793FD1D7834F200F92D7E /* MessagesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B57794061D783DED00F92D7E /* MessageTableCellView */,
+				B57794021D78360D00F92D7E /* AHCMessagesView.xib */,
+				B57793FE1D78358900F92D7E /* AHCMessagesViewController.h */,
+				B57794011D7835E600F92D7E /* AHCMessagesViewController+Private.h */,
+				B57793FF1D78358900F92D7E /* AHCMessagesViewController.m */,
+				B57794041D783A8400F92D7E /* Messages.plist */,
+			);
+			name = MessagesViewController;
+			sourceTree = "<group>";
+		};
+		B57794061D783DED00F92D7E /* MessageTableCellView */ = {
+			isa = PBXGroup;
+			children = (
+				B577940B1D783E6500F92D7E /* AHCMessageTableCellView.xib */,
+				B57794071D783E1400F92D7E /* AHCMessageTableCellView.h */,
+				B577940A1D783E2F00F92D7E /* AHCMessageTableCellView+Private.h */,
+				B57794081D783E1400F92D7E /* AHCMessageTableCellView.m */,
+			);
+			name = MessageTableCellView;
+			sourceTree = "<group>";
+		};
 		B5B633011AA1DF4200BBF084 = {
 			isa = PBXGroup;
 			children = (
 				B5B633081AA1DF6F00BBF084 /* KSPAutomaticHeightCalculationTableCellView */,
 				B5B6330F1AA1DFAD00BBF084 /* Resources */,
+				B57793D51D78129500F92D7E /* Sample */,
 				B5CD03551BCBAC0C0072878A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				B5CD03541BCBAC0C0072878A /* libKSPAutomaticHeightCalculationTableCellView.dylib */,
+				B57793C41D78112700F92D7E /* Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,6 +216,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		B57793C31D78112700F92D7E /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B57793D41D78112800F92D7E /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				B57793C01D78112700F92D7E /* Sources */,
+				B57793C11D78112700F92D7E /* Frameworks */,
+				B57793C21D78112700F92D7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sample;
+			productName = Sample;
+			productReference = B57793C41D78112700F92D7E /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B5CD03531BCBAC0C0072878A /* KSPAutomaticHeightCalculationTableCellView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5CD035B1BCBAC0C0072878A /* Build configuration list for PBXNativeTarget "KSPAutomaticHeightCalculationTableCellView" */;
@@ -112,6 +260,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Konstantin Pavlikhin";
 				TargetAttributes = {
+					B57793C31D78112700F92D7E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					B5CD03531BCBAC0C0072878A = {
 						CreatedOnToolsVersion = 7.0.1;
 					};
@@ -123,6 +274,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B5B633011AA1DF4200BBF084;
 			productRefGroup = B5CD03551BCBAC0C0072878A /* Products */;
@@ -130,11 +282,45 @@
 			projectRoot = "";
 			targets = (
 				B5CD03531BCBAC0C0072878A /* KSPAutomaticHeightCalculationTableCellView */,
+				B57793C31D78112700F92D7E /* Sample */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B57793C21D78112700F92D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57794051D783A8400F92D7E /* Messages.plist in Resources */,
+				B577940C1D783E6500F92D7E /* AHCMessageTableCellView.xib in Resources */,
+				B57794031D78360D00F92D7E /* AHCMessagesView.xib in Resources */,
+				B57793DF1D7812EA00F92D7E /* Assets.xcassets in Resources */,
+				B57793EB1D78155500F92D7E /* AHCUsersView.xib in Resources */,
+				B57793E21D7812F300F92D7E /* MainMenu.xib in Resources */,
+				B57793FA1D781FA000F92D7E /* Users.plist in Resources */,
+				B57793FC1D78229F00F92D7E /* Users.xcassets in Resources */,
+				B57793F21D7819C900F92D7E /* AHCUserTableCellView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		B57793C01D78112700F92D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B57793DD1D7812CB00F92D7E /* main.m in Sources */,
+				B57793E71D7814F200F92D7E /* AHCUsersViewController.m in Sources */,
+				B57793DC1D7812CB00F92D7E /* AppDelegate.m in Sources */,
+				B57794001D78358900F92D7E /* AHCMessagesViewController.m in Sources */,
+				B57793F71D781C9500F92D7E /* AHCUser.m in Sources */,
+				B57793EF1D78197200F92D7E /* AHCUserTableCellView.m in Sources */,
+				B57794091D783E1400F92D7E /* AHCMessageTableCellView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5CD03501BCBAC0C0072878A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,7 +331,109 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		B57793E01D7812F300F92D7E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B57793E11D7812F300F92D7E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		B57793D21D78112800F92D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sample/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.konstantinpavlikhin.KSPAutomaticHeightCalculationTableCellViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B57793D31D78112800F92D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Sample/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.konstantinpavlikhin.KSPAutomaticHeightCalculationTableCellViewSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		B5B633061AA1DF4200BBF084 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -246,6 +534,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B57793D41D78112800F92D7E /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B57793D21D78112800F92D7E /* Debug */,
+				B57793D31D78112800F92D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B5B633051AA1DF4200BBF084 /* Build configuration list for PBXProject "KSPAutomaticHeightCalculationTableCellView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -262,6 +559,7 @@
 				B5CD035D1BCBAC0C0072878A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView identifier="AHCUserTableCellView" id="Squ-wh-1N9" userLabel="UserTableCellView" customClass="AHCUserTableCellView">
+            <rect key="frame" x="0.0" y="0.0" width="290" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Ic-Ra-dN2" userLabel="AvatarView">
+                    <rect key="frame" x="20" y="3" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="Dae-Ya-eW7"/>
+                        <constraint firstAttribute="height" constant="34" id="xBb-66-VoX"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSUser" id="yFk-Je-lH2" userLabel="AvatarViewCell"/>
+                </imageView>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="vdS-Ui-3iw" userLabel="CenteringContainer">
+                    <rect key="frame" x="64" y="12" width="69" height="17"/>
+                    <subviews>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="400" translatesAutoresizingMaskIntoConstraints="NO" id="fXv-VH-pZ5" userLabel="NameLabel">
+                            <rect key="frame" x="-2" y="0.0" width="73" height="17"/>
+                            <textFieldCell key="cell" lineBreakMode="truncatingTail" allowsUndo="NO" sendsActionOnEndEditing="YES" alignment="left" title="NameLabel" usesSingleLineMode="YES" id="dGJ-4p-sEH" userLabel="NameLabelCell">
+                                <font key="font" metaFont="system"/>
+                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                            </textFieldCell>
+                        </textField>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fXv-VH-pZ5" secondAttribute="bottom" id="6Hl-2v-oFX"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fXv-VH-pZ5" secondAttribute="trailing" id="BTD-ha-Vjx"/>
+                        <constraint firstItem="fXv-VH-pZ5" firstAttribute="leading" secondItem="vdS-Ui-3iw" secondAttribute="leading" id="SQS-40-on8"/>
+                        <constraint firstItem="fXv-VH-pZ5" firstAttribute="top" secondItem="vdS-Ui-3iw" secondAttribute="top" id="TsB-Rt-p8k"/>
+                        <constraint firstAttribute="width" priority="100" id="dbw-b0-dc1"/>
+                    </constraints>
+                </customView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8Ic-Ra-dN2" secondAttribute="bottom" constant="3" id="49n-g6-cu4"/>
+                <constraint firstItem="8Ic-Ra-dN2" firstAttribute="top" secondItem="Squ-wh-1N9" secondAttribute="top" constant="3" id="5mj-oB-F5o"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vdS-Ui-3iw" secondAttribute="trailing" constant="20" symbolic="YES" id="Gpk-co-glP"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vdS-Ui-3iw" secondAttribute="bottom" id="PBK-ct-eTt"/>
+                <constraint firstAttribute="centerY" secondItem="vdS-Ui-3iw" secondAttribute="centerY" id="QvF-Py-caF"/>
+                <constraint firstItem="8Ic-Ra-dN2" firstAttribute="leading" secondItem="Squ-wh-1N9" secondAttribute="leading" constant="20" symbolic="YES" id="eSL-Rx-27Q"/>
+                <constraint firstItem="vdS-Ui-3iw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Squ-wh-1N9" secondAttribute="top" id="gO1-0B-alo"/>
+                <constraint firstItem="vdS-Ui-3iw" firstAttribute="leading" secondItem="8Ic-Ra-dN2" secondAttribute="trailing" constant="10" id="npf-hx-BS9"/>
+            </constraints>
+            <connections>
+                <outlet property="avatarView" destination="8Ic-Ra-dN2" id="TvJ-Bk-iVG"/>
+                <outlet property="centeringContainer" destination="vdS-Ui-3iw" id="2ti-z4-jZP"/>
+                <outlet property="imageView" destination="8Ic-Ra-dN2" id="7wo-9j-eo3"/>
+                <outlet property="nameLabel" destination="fXv-VH-pZ5" id="Hig-ZI-wMa"/>
+                <outlet property="nameLabelBottomConstraint" destination="6Hl-2v-oFX" id="HdG-Tf-1vC"/>
+                <outlet property="statusLabel" destination="Je5-Ue-dnv" id="05l-bj-dCR"/>
+                <outlet property="textField" destination="fXv-VH-pZ5" id="meL-E0-JAg"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="107"/>
+        </customView>
+        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Je5-Ue-dnv" userLabel="StatusLabel">
+            <rect key="frame" x="0.0" y="0.0" width="57" height="11"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <textFieldCell key="cell" controlSize="mini" lineBreakMode="truncatingTail" allowsUndo="NO" sendsActionOnEndEditing="YES" title="StatusLabel" usesSingleLineMode="YES" id="Fj1-dg-Gcb" userLabel="StatusLabelCell">
+                <font key="font" metaFont="miniSystem"/>
+                <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+            </textFieldCell>
+            <point key="canvasLocation" x="202.5" y="175.5"/>
+        </textField>
+    </objects>
+    <resources>
+        <image name="NSUser" width="32" height="32"/>
+    </resources>
+</document>
