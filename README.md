@@ -6,6 +6,12 @@
 
 A useful superclass for a custom view-based `NSTableView`’s cell.
 
+## Sample Application
+
+There is a simple application that demonstrates `KSPAutomaticHeightCalculationTableCellView` in action. The app shows a single window with an embedded split view. The left pane has a fixed-height cells (`AHCUserTableCellView`) that represent some fictional users. The right pane has cells (`AHCMessageTableCellView`) whose heights depend both on their textual content and a column width. When window is resized the table view on the right is notified to re-query the row heights from the delegate.
+
+![](Sample/Screenshot.png)
+
 ## How To Use
 
 #### Your custom cell class should inherit from `KSPAutomaticHeightCalculationTableCellView`
