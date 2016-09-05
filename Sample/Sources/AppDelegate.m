@@ -29,6 +29,8 @@
   AHCMessagesViewController* _messagesViewController;
 }
 
+#pragma mark - NSApplicationDelegate Protocol Implementation
+
 - (void) applicationDidFinishLaunching: (NSNotification*) aNotification
 {
   {{
@@ -64,6 +66,11 @@
 
     [self.rightPane addConstraints: [NSLayoutConstraint constraintsWithVisualFormat: @"V:|[messagesView(>=150@1000)]|" options: 0 metrics: nil views: views]];
   }}
+}
+
+- (BOOL) applicationShouldTerminateAfterLastWindowClosed: (NSApplication*) sender
+{
+  return YES;
 }
 
 @end
